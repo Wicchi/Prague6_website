@@ -1,4 +1,4 @@
-/* includes border & padding in the total element width */
+/* includes border and padding in the total element width */
 * {
   box-sizing: border-box;
 }
