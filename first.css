@@ -1,3 +1,8 @@
+/* includes border & padding in the total element width */
+* {
+  box-sizing: border-box;
+}
+
 /* Navbar container */
 .navbar {
     overflow: hidden;
