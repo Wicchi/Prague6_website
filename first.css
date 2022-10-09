@@ -159,6 +159,15 @@ input:checked~ul.submenu {
     margin: auto;
     min-width: 100px;
     border: 1px solid #ccc;
+    box-sizing: border-box;
+    border-radius: 4px;
+    font-size: 16px;
+    /* probably make this searching like clickable img with param enter... */
+    background-color: white;
+    background-image: url('searching.png');
+    background-repeat: no-repeat;
+    background-size: 3vw;
+    background-position: right;
 }
 
 /* When the screen is less than 600px wide, stack the links and the search field vertically instead of horizontally */
