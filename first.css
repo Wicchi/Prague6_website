@@ -152,12 +152,12 @@ input:checked~ul.submenu {
 
 /* Style the search box inside the navigation bar */
 .navbar input[type=text] {
-    float: none;
+    float: start;
     display: block;
     text-align: left;
     width: 100%;
-    margin: 0;
-    padding: 14px;
+    margin: auto;
+    min-width: 100px;
     border: 1px solid #ccc;
 }
 
@@ -176,8 +176,14 @@ input:checked~ul.submenu {
         float: right;
         padding: 6px;
         border: none;
-        margin-top: 8px;
-        margin-right: 16px;
+        margin: auto;
         font-size: 17px;
+    }
+
+    .layoutcontent {
+        width:45vw;
+        height:45vh;
+        margin: auto;
+
     }
 }
