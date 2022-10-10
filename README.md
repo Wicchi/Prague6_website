@@ -1,3 +1,3 @@
 # webdesign
 Q:
-1. How to implement search bar with additional web page with static web page?
+1. How to implement search bar with results page with static webpage?
