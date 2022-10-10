@@ -14,6 +14,15 @@ label {
     display: block;
     cursor: pointer;
 }
+label img {
+    width: 5%;
+    height: 5%;
+}
+
+.homepage img {
+    width: 15%;
+    height: 15%;
+}
 
 /*show the submenu when input is checked*/
 input:checked~ul.submenu {
@@ -44,21 +53,21 @@ input:checked~ul.submenu {
 }
 
 /* Dropdown button */
-.dropdown .dropbtn {
+.dropdown #check01 {
     font-size: 16px;
     border: none;
     outline: none;
     color: white;
-    padding: 14px 16px;
     background-color: inherit;
     font: inherit; /* Important for vertical align on mobile phones */
     margin: 0; /* Important for vertical align on mobile phones */
 }
-
 /* Add a red background color to navbar links on hover */
-.navbar a:hover, .dropdown:hover .dropbtn {
-    background-color: red;
+.navbar a:hover, .dropdown:hover {
+    background-color: #746060;
+    background-size: inherit;
 }
+
 
 /* Dropdown content (hidden by default) */
 .dropdown-content {
@@ -85,11 +94,8 @@ input:checked~ul.submenu {
 
 /* Create three equal columns that floats next to each other */
 .column {
-    float: left;
-    width: 33.33%;
-    padding: 10px;
-    background-color: #ccc;
-    height: 250px;
+    width: 100%;
+    height: auto;
 }
 
 /* Style links inside the columns */
@@ -114,14 +120,6 @@ input:checked~ul.submenu {
     clear: both;
 }
 
-/* Responsive layout - makes the three columns stack on top of each other instead of next to each other */
-@media screen and (max-width: 600px) {
-    .column {
-        width: 100%;
-        height: auto;
-    }
-}
-
 /* Add a black background color to the top navigation bar */
 .navbar {
     overflow: hidden;
@@ -138,6 +136,27 @@ input:checked~ul.submenu {
     padding: 14px;
 }
 
+.navbar input[type=text] {
+    float: none;
+    display: block;
+    text-align: left;
+    width: 100%;
+    margin: 0;
+    padding: 14px;
+}
+.navbar .search-container {
+    float: none;
+}
+
+.navbar .search-container button {
+    float: none;
+    display: block;
+    text-align: left;
+    width: 100%;
+    margin: auto;
+    padding: 2px;
+}
+
 /* Change the color of links on hover */
 .navbar a:hover {
     background-color: #ddd;
@@ -150,28 +169,10 @@ input:checked~ul.submenu {
     color: white;
 }
 
-/* Style the search box inside the navigation bar */
-.navbar input[type=text] {
-    float: start;
-    display: block;
-    text-align: left;
-    width: 100%;
-    margin: auto;
-    min-width: 100px;
-    border: 1px solid #ccc;
-    box-sizing: border-box;
-    border-radius: 4px;
-    font-size: 16px;
-    /* probably make this searching like clickable img with param enter... */
-    background-color: white;
-    background-image: url('searching.png');
-    background-repeat: no-repeat;
-    background-size: 3vw;
-    background-position: right;
-}
 
 /* When the screen is less than 600px wide, stack the links and the search field vertically instead of horizontally */
 @media (min-width: 600px) {
+    /*
     .navbar a {
         float: left;
         display: block;
@@ -188,11 +189,85 @@ input:checked~ul.submenu {
         margin: auto;
         font-size: 17px;
     }
+    */
 
     .layoutcontent {
         width:45vw;
         height:45vh;
         margin: auto;
-
     }
+    .homepage img {
+        width: 25%;
+        height: 25%;
+        position: relative;
+        float: left;
+    }
+
+    .dropdown {
+        float: right;
+        overflow: hidden;
+    }
+
+    label img {
+       float: right;
+        width: 10%;
+        height: 10%;
+        display: block;
+    }
+
+    .column {
+        float: left;
+        width: 33.33%;
+        padding: 10px;
+        background-color: #ccc;
+        height: 250px;
+    }
+
+    .navbar {
+        overflow: hidden;
+        background-color: #e9e9e9;
+    }
+
+    .navbar a {
+        float: left;
+        display: block;
+        color: black;
+        text-align: center;
+        padding: 14px 16px;
+        text-decoration: none;
+        font-size: 17px;
+    }
+
+    .navbar a:hover {
+        background-color: #ddd;
+        color: black;
+    }
+
+    .navbar a.active {
+        background-color: #2196F3;
+        color: white;
+    }
+
+    .navbar .search-container {
+        float: right;
+        display: block;
+    }
+
+    .navbar input[type=text] {
+        padding: 6px;
+        margin-top: 8px;
+        font-size: 17px;
+        border: grey;
+    }
+
+    .navbar .search-container button {
+        float: right;
+        padding: 6px 10px;
+        background: #ddd;
+        font-size: 17px;
+        border: none;
+        cursor: pointer;
+    }
+
+
 }
