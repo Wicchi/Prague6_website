@@ -169,6 +169,20 @@ input:checked~ul.submenu {
     color: white;
 }
 
+.postdatenews {
+    font-size: medium;
+}
+
+.posttimenews {
+    font-size: small;
+}
+
+article.news {
+    margin: 2px;
+    display: block;
+    border-style: solid none;
+    border-width: 1px;
+}
 
 /* When the screen is less than 600px wide, stack the links and the search field vertically instead of horizontally */
 @media (min-width: 600px) {

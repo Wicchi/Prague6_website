@@ -15,72 +15,95 @@
     <link rel="stylesheet" type="text/css" href="first.css" />
 </head>
 <body>
-    <div class="layoutcontent">
-        <section class="headerbox">
-            <div class="navbar">
-                <div class="homepage"><a href="home_page.html"><img src="praha6logo.png"/></a></div>
-                <div class="dropdown">
-                    <input id="check01" type="checkbox" name="menu" />
-                    <label for="check01"><img  src="menu_button.png" style="background: transparent"/> </label>
-                    <ul class="submenu">
-                        <div class="dropdown-content">
-                            <div class="row">
-                                <div class="column">
-                                    <h3>Contact</h3>
-                                    <a href="contacts.html">Contacts</a>
-                                </div>
-                                <div class="column">
-                                    <h3>Address</h3>
-                                    <a href="#mapycz">mapycz</a>
-                                    <a href="#googlemaps">googlemaps</a>
-                                    <a href="#officeaddress">postaddress</a>
-                                </div>
-                                <div class="column">
-                                    <a href="#Vacancies">Vacancies</a>
-                                    <h4>Front-end and backend developer, min 1 year exp.</h4>
-                                    <a href="#Forthemedia">For the media</a>
-                                    <h4>Could be contact of responsible persons</h4>
-                                    <a href="#Officialdesk">Official desk</a>
-                                    <h4>Administration Representative</h4>
-                                    <a href="#Reportaproblem">Report a problem</a>
-                                </div>
-                                <div class="column">
-                                    <a href="#news">News</a>
-                                    <a href="#events">Events</a>
-                                    <a href="#Transportrestrictions">Transport restrictions</a>
-                                    <a href="#Developmentandlanduseplan">Development and land use plan</a>
+    <header role="banner" itemscope itemtype="http://schema.org/WPHeader">
+            <section class="headerbox">
+                <div class="navbar" role=”navigation” aria-label=”Main navigation” itemscope=”” itemtype=”http://schema.org/SiteNavigationElement">
+                    <div itemscope itemtype="https://schema.org/GovernmentOrganization" class="homepage"><a href="home_page.html"><img itemprop="logo" src="praha6logo.png" alt="praha6logo"/></a></div>
+                    <div class="dropdown">
+                        <input id="check01" type="checkbox" name="menu" />
+                        <label for="check01"><img  src="menu_button.png" alt="menu_button"/> </label>
+                        <ul class="submenu">
+                            <div class="dropdown-content">
+                                <div class="row">
+                                    <div class="column">
+                                        <h3>Contact</h3>
+                                        <a href="contacts.html">Contacts</a>
+                                    </div>
+                                    <div class="column">
+                                        <h3>Address</h3>
+                                        <a href="#mapycz">mapycz</a>
+                                        <a href="#googlemaps">googlemaps</a>
+                                        <a href="#officeaddress">postaddress</a>
+                                    </div>
+                                    <div class="column">
+                                        <a href="#Vacancies">Vacancies</a>
+                                        <h4>Front-end and backend developer, min 1 year exp.</h4>
+                                        <a href="#Forthemedia">For the media</a>
+                                        <h4>Could be contact of responsible persons</h4>
+                                        <a href="#Officialdesk">Official desk</a>
+                                        <h4>Administration Representative</h4>
+                                        <a href="#Reportaproblem">Report a problem</a>
+                                    </div>
+                                    <div class="column">
+                                        <a href="#news">News</a>
+                                        <a href="#events">Events</a>
+                                        <a href="#Transportrestrictions">Transport restrictions</a>
+                                        <a href="#Developmentandlanduseplan">Development and land use plan</a>
+                                    </div>
                                 </div>
                             </div>
+                        </ul>
                         </div>
-                    </ul>
-                    </div>
-                <div class="search">
-                    <div class="search-container">
-                        <form action="/searchresult.html">
-                            <input type="text" placeholder="Search.." name="search">
-                            <button type="submit"><img src="searching.png" style="height: 2vh" /> <i class="fa fa-search"></i></button>
-                        </form>
+                    <div class="search">
+                        <div class="search-container">
+                            <form action="/searchresult.html">
+                                <input type="text" placeholder="Search.." name="search">
+                                <button type="submit"><img src="searching.png" alt="searching" style="height: 2vh" /> <i class="fa fa-search"></i></button>
+                            </form>
+                        </div>
                     </div>
                 </div>
-            </div>
-        </section>
+            </section>
+    </header>
         <section class="second_level_box">
-            <div class="news-box">
-                <div class="1news">
-                    <h1>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris dui enim, aliquam at maximus quis, feugiat non enim. Morbi non magna rutrum, fermentum diam vel, maximus justo. Duis vulputate nibh at felis pellentesque faucibus a in tellus. Nulla neque est, ultrices at nisl fringilla, porta vestibulum velit. Nam a viverra est. Praesent nibh est, condimentum vitae lacus eu, laoreet laoreet nunc. Fusce justo massa, ornare a gravida eget, hendrerit in metus. Maecenas in massa odio.</h1>
+            <main class=”o-main” role=”main” id=”main” itemscope=”” itemprop=”mainContentOfPage” itemtype=”https://schema.org/NewsArticle">
+                <div class="news-box">
+                    <h1>Latest news</h1>
+                    <article class="news">
+                        <h2>News1</h2>
+                        <header>
+                            <h3 class="postdatenews">10/10/2022</h3>
+                            <h4 class="posttimenews">7:02 PM</h4>
+                        </header>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse nec dignissim urna, sed suscipit ante. Donec laoreet porta vestibulum...</p>
+                        <a href="News1.html">Read more...</a>
+                    </article>
+                    <article class="news">
+                        <h2>News2</h2>
+                        <header>
+                            <h3 class="postdatenews">9/10/2022</h3>
+                            <h4 class="posttimenews">7:04 PM</h4>
+                        </header>
+                        <p>Mauris dui enim, aliquam at maximus quis, feugiat non enim. Morbi non magna rutrum, fermentum diam vel, maximus justo...</p>
+                        <a href="News2.html">Read more...</a>
+                    </article>
+                    <article class="news">
+                        <h2>News3</h2>
+                        <header>
+                            <h3 class="postdatenews">8/10/2022</h3>
+                            <h4 class="posttimenews">7:07 PM</h4>
+                        </header>
+                        <p> Duis vulputate nibh at felis pellentesque faucibus a in tellus...</p>
+                        <a href="News3.html">Read more...</a>
+                    </article>
                 </div>
-            </div>
-        </section>
-        <section class="third_level_box">
-            <div class="reation">
-                <h1>Vivamus vel augue purus. Curabitur non sodales odio, tincidunt finibus mauris. Mauris in libero laoreet, ultrices orci posuere, volutpat libero. Ut congue ligula turpis, ut semper lacus sodales nec. Aliquam lobortis tortor faucibus, bibendum eros sit amet, commodo est. Praesent gravida sem sit amet velit mattis imperdiet. Sed volutpat tristique dui, id malesuada leo fringilla eu. Nam tempor, diam a aliquam porta, ipsum nulla condimentum eros, ut maximus tortor risus vel eli</h1>
-            </div>
+            </main>
         </section>
         <section class="footer">
             <footer id="page-footer">
                 <div>
                     <a href="https://www.czu.cz/en/">
-                        <img alt="czulogo" src="czulogo.png" style="height: 20px;width: 20px">
+                        <img alt="czulogo" src="czulogo.png" atl="czulogo" style="height: 20px;width: 20px">
                     </a>
                 </div>
                 <div>
@@ -91,6 +114,5 @@
                 </div>
             </footer>
         </section>
-    </div>
 </body>
 </html>
