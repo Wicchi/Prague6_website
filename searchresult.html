@@ -15,72 +15,81 @@
   <link rel="stylesheet" type="text/css" href="first.css" />
 </head>
 <body>
-<div class="layoutcontent">
-  <section class="headerbox">
-    <div class="headerbox__navbar">
-      <div class="homepage"><a href="index.html"><img src="praha6logo.png"/></a></div>
-      <div class="dropdown">
-        <input id="check01" type="checkbox" name="menu" />
-        <label for="check01"><img  src="menu_button.png" style="background: transparent"/> </label>
-        <ul class="submenu">
-          <div class="dropdown-content">
-            <div class="row">
-              <div class="column">
-                <h3>Contact</h3>
-                <a href="contacts.html">Contacts</a>
-              </div>
-              <div class="column">
-                <h3>Address</h3>
-                <a href="#mapycz">mapycz</a>
-                <a href="#googlemaps">googlemaps</a>
-                <a href="#officeaddress">postaddress</a>
-              </div>
-              <div class="column">
-                <a href="#Vacancies">Vacancies</a>
-                <h4>Front-end and backend developer, min 1 year exp.</h4>
-                <a href="#Forthemedia">For the media</a>
-                <h4>Could be contact of responsible persons</h4>
-                <a href="#Officialdesk">Official desk</a>
-                <h4>Administration Representative</h4>
-                <a href="#Reportaproblem">Report a problem</a>
-              </div>
-              <div class="column">
-                <a href="#news">News</a>
-                <a href="#events">Events</a>
-                <a href="#Transportrestrictions">Transport restrictions</a>
-                <a href="#Developmentandlanduseplan">Development and land use plan</a>
-              </div>
-            </div>
-          </div>
-        </ul>
+<header role="banner" itemscope itemtype="http://schema.org/WPHeader">
+  <nav>
+    <div class="nav">
+      <div class="nav__links">
+        <a href="index.html">Homepage</a>
+        <a href="contacts.html">Contact</a>
+        <a href="News.html">News</a>
+        <a href="Events.html">Events</a>
+        <a href="TrafRes.html">Traffic restrictions</a>
+        <a href="DaGp.html">Develop and ground plan</a>
       </div>
-      <div class="search">
+      <div class="nav__search">
         <div class="search-container">
           <form action="/searchresult.html">
             <input type="text" placeholder="Search.." name="search">
-            <button type="submit"><img src="searching.png" style="height: 2vh" /> <i class="fa fa-search"></i></button>
+            <button type="submit">Search<i class="fa fa-search"></i></button>
           </form>
         </div>
       </div>
     </div>
-  </section>
-  <section class="second_level_box">
-  </section>
-  <section class="footer">
-    <footer id="page-footer">
-      <div>
-        <a href="https://www.czu.cz/en/">
-          <img alt="czulogo" src="czulogo.png" style="height: 20px;width: 20px">
-        </a>
-      </div>
-      <div>
-        <p><time itemprop="startDate" datetime="2022-10-5">October 5, 2022</time> Copyright</p>
-        <h2><a href="https://www.linkedin.com/in/vladislavshlapak/" itemprop="url"> Shlapak Vladislav</a><br></h2>
-        <h2><a href="" itemprop="url"> </a><br></h2>
-        <h2><a href="" itemprop="url"> </a><br></h2>
-      </div>
-    </footer>
-  </section>
-</div>
+  </nav>
+</header>
+<section class="second_level_box">
+  <main class=”o-main” role=”main” id=”main” itemscope=”” itemprop=”mainContentOfPage” itemtype=”https://schema.org/NewsArticle">
+    <div class="news-box">
+      <h1>Latest news</h1>
+      <article class="news">
+        <h2>News1</h2>
+        <header>
+          <h3 class="postdatenews">10/10/2022</h3>
+          <h4 class="posttimenews">7:02 PM</h4>
+        </header>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse nec dignissim urna, sed suscipit ante. Donec laoreet porta vestibulum...</p>
+        <a href="News1.html">Read more...</a>
+      </article>
+      <article class="news">
+        <h2>News2</h2>
+        <header>
+          <h3 class="postdatenews">9/10/2022</h3>
+          <h4 class="posttimenews">7:04 PM</h4>
+        </header>
+        <p>Mauris dui enim, aliquam at maximus quis, feugiat non enim. Morbi non magna rutrum, fermentum diam vel, maximus justo...</p>
+        <a href="News2.html">Read more...</a>
+      </article>
+      <article class="news">
+        <h2>News3</h2>
+        <header>
+          <h3 class="postdatenews">8/10/2022</h3>
+          <h4 class="posttimenews">7:07 PM</h4>
+        </header>
+        <p> Duis vulputate nibh at felis pellentesque faucibus a in tellus...</p>
+        <a href="News3.html">Read more...</a>
+      </article>
+    </div>
+  </main>
+  <div class="aside">
+    <aside>
+      <h2>Do you want to enlarge your penis? All you need is <a href="https://www.czu.cz/en">...</a></h2>
+    </aside>
+  </div>
+</section>
+<section class="footer">
+  <footer id="page-footer">
+    <div>
+      <a href="https://www.czu.cz/en/">
+        <img alt="czulogo" src="czulogo.png" atl="czulogo" style="height: 20px;width: 20px">
+      </a>
+    </div>
+    <div>
+      <p><time itemprop="startDate" datetime="2022-10-5">October 5, 2022</time> Copyright</p>
+      <h2><a href="https://www.linkedin.com/in/vladislavshlapak/" itemprop="url"> Shlapak Vladislav</a><br></h2>
+      <h2><a href="" itemprop="url"> </a><br></h2>
+      <h2><a href="" itemprop="url"> </a><br></h2>
+    </div>
+  </footer>
+</section>
 </body>
 </html>

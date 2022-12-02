@@ -12,6 +12,7 @@
     <meta property="og:description"        content="" />
     <meta property="og:image"              content="" />
     <title>Praha-6 Contacts</title>
+    <link rel="stylesheet" type="text/css" href="first.css" />
     <style> * {
         box-sizing: border-box;
     }
@@ -89,10 +90,28 @@
     </style>
 </head>
 <body>
-<div class="header">
-    <h1>Contacts</h1>
-    <h2>Prague 6</h2>
-</div>
+<header role="banner" itemscope itemtype="http://schema.org/WPHeader">
+    <nav>
+        <div class="nav">
+            <div class="nav__links">
+                <a href="index.html">Homepage</a>
+                <a href="contacts.html">Contact</a>
+                <a href="News.html">News</a>
+                <a href="Events.html">Events</a>
+                <a href="TrafRes.html">Traffic restrictions</a>
+                <a href="DaGp.html">Develop and ground plan</a>
+            </div>
+            <div class="nav__search">
+                <div class="search-container">
+                    <form action="/searchresult.html">
+                        <input type="text" placeholder="Search.." name="search">
+                        <button type="submit">Search<i class="fa fa-search"></i></button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </nav>
+</header>
 <div>
     <h3><strong>Contacts and Working hours</strong></h3>
 </div>
