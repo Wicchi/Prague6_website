@@ -10,7 +10,34 @@
 input, ul.submenu {
     display: none;
 }
+.grid-container {
+    display: grid;
+    grid-template-areas:
+        'tonav tonav tonav tonav tonav tonav'
+        'main main main main main aside'
+        'footer footer footer footer footer footer';
+}
+nav {
+    width: 100%;
+    grid-area: tonav;
+    align-items: center;
+}
+.nav {
+    grid-area: tonav;
+}
+.second_level_box {
+    grid-area: main;
+}
+.aside {
+    display: flex;
+    flex-direction: column;
+    grid-area: aside;
+}
+.footer {
+    grid-area: footer;
+}
 .nav__links {
+    grid-area: tonav;
     display: flex;
     flex-direction: column;
     padding: 0 1rem;
@@ -76,14 +103,18 @@ article.news {
     border-width: 1px;
 }
 
-aside {
-    width: 30%;
-    float: right;
-}
 
 /* media for the medium screen */
 @media only screen and (min-width: 64.063em) {
+    .grid-container {
+        display: grid;
+        grid-template-areas:
+        'tonav tonav tonav tonav tonav tonav tonav'
+        'main main main main main main aside'
+        'footer footer footer footer footer footer footer';
+    }
     nav {
+        grid-area: tonav;
         padding-bottom: 3rem;
         color: black;
     }
@@ -115,13 +146,32 @@ aside {
         margin: auto;
         width: fit-content;
         padding: 2px;
+    }
+    .second_level_box {
+        grid-area: main;
+    }
+    .aside {
+        display: flex;
+        flex-direction: column;
+        grid-area: aside;
+    }
+    .footer {
+        grid-area: footer;
     }
 
 }
 
 /* media for the large screen */
 @media only screen and (min-width: 90.063em){
+    .grid-container {
+        display: grid;
+        grid-template-areas:
+        'tonav tonav tonav tonav tonav tonav tonav tonav'
+        'main main main main main main main aside'
+        'footer footer footer footer footer footer footer footer';
+    }
     nav {
+        grid-area: tonav;
         padding-bottom: 3rem;
         color: black;
     }
@@ -154,7 +204,17 @@ aside {
         padding: 2px;
         width: fit-content;
     }
-
+    .second_level_box {
+        grid-area: main;
+    }
+    .aside {
+        display: flex;
+        flex-direction: column;
+        grid-area: aside;
+    }
+    .footer {
+        grid-area: footer;
+    }
 }
 
 /* media for the small screen */
