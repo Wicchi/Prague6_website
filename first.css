@@ -17,6 +17,18 @@ input, ul.submenu {
         'main main main main main aside'
         'footer footer footer footer footer footer';
 }
+.head-of-district, .head-of-media-center, .secretary {
+    display: flex;
+    flex-direction: row;
+}
+.hof-describe, .homc-describe, .sct-describe {
+    align-self: flex-end;
+}
+.hof-pic, .homc-pic, .sct-pic {
+    align-self: center;
+    text-align: center;
+}
+
 nav {
     width: 100%;
     grid-area: tonav;
@@ -37,8 +49,45 @@ nav {
     align-self: flex-end;
 }
 .adv0__picture, .adv1__picture, .adv2__picture, .adv3__picture, .adv4__picture {
+    align-self: center;
     width: 50px;
     height: 50px;
+}
+.grid-container-trafres {
+    height: fit-content;
+    display: grid;
+    grid-template:15% 3% 82%/ auto;
+}
+.text-map {
+    position: absolute;
+    left: 15px;
+    background: none;
+    color: white;
+}
+.trafres-map {
+    width: 100%;
+    height: 100%;
+}
+
+.location {
+    text-align: center;
+    flex: 0 0 270px;
+}
+.res-desc {
+    flex: 0 0 270px;
+}
+
+.street-name{
+    padding-right: 10px;
+}
+
+
+.restriction {
+    display: block;
+}
+.first-res, .second-res, .third-res {
+    display: flex;
+    padding-right: 10px;
 }
 
 .aside {
@@ -119,6 +168,16 @@ article.events {
     display: block;
     border-style: solid none;
     border-width: 1px;
+}
+ul.col-6 {
+    list-style-type: none;
+    display:inline;
+}
+
+.row::after {
+    content: "";
+    clear: both;
+    display: table;
 }
 
 
