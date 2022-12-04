@@ -28,9 +28,21 @@ nav {
 .second_level_box {
     grid-area: main;
 }
-.aside {
+.adv0, .adv1, .adv2, .adv3, .adv4 {
     display: flex;
     flex-direction: column;
+    justify-content: space-between;
+}
+.adv0__text, .adv1__text, .adv2__text, .adv3__text, .adv4__text {
+    align-self: flex-end;
+}
+.adv0__picture, .adv1__picture, .adv2__picture, .adv3__picture, .adv4__picture {
+    width: 50px;
+    height: 50px;
+}
+
+.aside {
+    justify-content: center;
     grid-area: aside;
 }
 .footer {
@@ -102,6 +114,12 @@ article.news {
     border-style: solid none;
     border-width: 1px;
 }
+article.events {
+    margin: 2px;
+    display: block;
+    border-style: solid none;
+    border-width: 1px;
+}
 
 
 /* media for the medium screen */
@@ -109,9 +127,9 @@ article.news {
     .grid-container {
         display: grid;
         grid-template-areas:
-        'tonav tonav tonav tonav tonav tonav tonav'
-        'main main main main main main aside'
-        'footer footer footer footer footer footer footer';
+        'tonav tonav tonav tonav tonav tonav tonav tonav'
+        'main main main main main main main aside'
+        'footer footer footer footer footer footer footer footer';
     }
     nav {
         grid-area: tonav;
@@ -144,15 +162,28 @@ article.news {
         align-items: flex-end;
         text-align: left;
         margin: auto;
-        width: fit-content;
         padding: 2px;
+        width: fit-content;
     }
     .second_level_box {
         grid-area: main;
     }
-    .aside {
+    .adv0, .adv1, .adv2, .adv3, .adv4 {
         display: flex;
         flex-direction: column;
+        justify-content: space-between;
+    }
+    .adv0__text, .adv1__text, .adv2__text, .adv3__text, .adv4__text {
+        align-self: flex-end;
+    }
+    .adv0__picture, .adv1__picture, .adv2__picture, .adv3__picture, .adv4__picture {
+        width: 50px;
+        height: 50px;
+    }
+    .aside {
+        float: right;
+        width: 25%;
+        justify-content: center;
         grid-area: aside;
     }
     .footer {
@@ -207,9 +238,22 @@ article.news {
     .second_level_box {
         grid-area: main;
     }
-    .aside {
+    .adv0, .adv1, .adv2, .adv3, .adv4 {
         display: flex;
         flex-direction: column;
+        justify-content: space-between;
+    }
+    .adv0__text, .adv1__text, .adv2__text, .adv3__text, .adv4__text {
+        align-self: flex-end;
+    }
+    .adv0__picture, .adv1__picture, .adv2__picture, .adv3__picture, .adv4__picture {
+        width: 50px;
+        height: 50px;
+    }
+    .aside {
+        float: right;
+        width: 25%;
+        justify-content: center;
         grid-area: aside;
     }
     .footer {
