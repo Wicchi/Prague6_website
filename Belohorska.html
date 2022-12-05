@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en" xmlns="http://www.w3.org/1999/html">
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta charset="UTF-8">
+  <meta name="author" content="Shlapak Vladislav">
+  <meta name="description" content="Praha-6 district homepage">
+  <meta property="og:url"                content="" />
+  <meta property="og:type"               content="" />
+  <meta property="og:title"              content="Praha-6" />
+  <meta property="og:description"        content="" />
+  <meta property="og:image"              content="" />
+  <meta name="viewport" content="width=device-width; initial-scale=1.0; maximum-scale=1.0;">
+  <title>Praha-6 district homepage</title>
+  <link rel="stylesheet" type="text/css" href="first.css" />
+</head>
+<body>
+<div class="grid-container">
+  <header role="banner" itemscope itemtype="http://schema.org/WPHeader" class="nav">
+    <nav>
+      <div class="nav__links">
+        <a href="index.html">Homepage</a>
+        <a href="contacts.html">Contact</a>
+        <a href="loe.html">List of employers</a>
+        <a href="Events.html">Events</a>
+        <a href="TrafRes.html">Traffic restrictions</a>
+        <a href="DaGp.html">Develop and ground plan</a>
+      </div>
+      <div class="nav__search">
+        <div class="search-container">
+          <form action="/searchresult.html">
+            <input type="text" placeholder="Search.." name="search">
+            <button type="submit">Search<i class="fa fa-search"></i></button>
+          </form>
+        </div>
+      </div>
+    </nav>
+  </header>
+  <section class="second_level_box">
+    <main class=”o-main” role=”main” id=”main” itemscope=”” itemprop=”mainContentOfPage” itemtype=”https://schema.org/NewsArticle">
+      <div class="grid-container-trafres-1">
+        <div class="grid-item-trafres">
+          <p class="heading">Traffic restrictions in the street</p>
+          <label for="dropdownrestriction"></label>
+          <select id="dropdownrestriction" name="dropdownrestriction" onchange="location = this.value;">
+            <option value="Belohorska.html">Bělohorská</option>
+            <option value="TrafRes.html">All streets</option>
+            <option value="Albanska.html">Albánská</option>
+            <option value="Dejvicka.html">Dejvická</option>
+          </select>
+        </div>
+        <a href="https://en.mapy.cz/zakladni?source=area&id=26629&x=14.3329719&y=50.1038360&z=13" class="trafres-map">
+          <img src="background-trafres.png" alt="picture of praha 6" class="trafres-map"/>
+          <span class="text-map">Look at the map</span>
+        </a>
+        <div class="restriction">
+          <div class="first-res">
+            <div class="location">
+              <p class="street-name">Bělohorská</p>
+              <p class="date"><time>1.12.2022-23.12.2022</time></p>
+            </div>
+            <div class="res-desc">
+              <p>Sed at urna ut metus posuere bibendum vel quis ante. Quisque egestas sollicitudin libero non tristique. Proin justo urna, fringilla ut vehicula id, cursus id tortor. Fusce porta dapibus mi vitae tincidunt. In gravida sit amet diam nec vestibulum.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+  </section>
+  <section class="footer">
+    <footer id="page-footer">
+      <div>
+        <a href="https://www.czu.cz/en/">
+          <img alt="czulogo" src="czulogo.png" atl="czulogo" style="height: 20px;width: 20px">
+        </a>
+      </div>
+      <div>
+        <p><time itemprop="startDate" datetime="2022-10-5">October 5, 2022</time> Copyright</p>
+        <h2><a href="https://www.linkedin.com/in/vladislavshlapak/" itemprop="url"> Shlapak Vladislav</a><br></h2>
+        <h2><a href="" itemprop="url"> </a><br></h2>
+        <h2><a href="" itemprop="url"> </a><br></h2>
+      </div>
+    </footer>
+  </section>
+</div>
+</body>
+</html>

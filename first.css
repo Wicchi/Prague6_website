@@ -1,7 +1,6 @@
 /* includes border and padding in the total element width */
 * {
   box-sizing: border-box;
-    color: black;
     background-color: white;
 }
 
@@ -56,8 +55,20 @@ nav {
 .grid-container-trafres {
     height: fit-content;
     display: grid;
-    grid-template:15% 3% 82%/ auto;
+    grid-template:17% 5% 75%/ auto;
 }
+.grid-container-trafres-1 {
+    height: fit-content;
+    display: grid;
+    grid-template: 25% 5% 70% / auto;
+}
+
+.grid-container-trafres-2 {
+    height: fit-content;
+    display: grid;
+    grid-template:5% 5% 80%/ auto;
+}
+
 .text-map {
     position: absolute;
     left: 15px;
@@ -83,14 +94,14 @@ nav {
 
 
 .restriction {
+    width: 100%;
     display: block;
 }
-.first-res, .second-res, .third-res {
-    display: flex;
-    padding-right: 10px;
-}
+
 
 .aside {
+    position: -webkit-sticky;
+    position: sticky;
     justify-content: center;
     grid-area: aside;
 }
@@ -180,9 +191,40 @@ ul.col-6 {
     display: table;
 }
 
+.plans {
+    display: flex;
+    flex-direction: column;
+}
+.Heading-text>p {
+    color: cornflowerblue;
+    font-size: 125%;
+}
 
 /* media for the medium screen */
 @media only screen and (min-width: 64.063em) {
+    .grid-container-trafres-2 {
+        height: fit-content;
+        display: grid;
+        grid-template:7% 5% 80%/ auto;
+    }
+    .plans > article {
+        text-align: center;
+        flex: 1 0 23%;
+    }
+
+    .plans {
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: row;
+        padding: 5px 5px 15px 15px;
+    }
+    .first-res, .second-res, .third-res {
+        display: flex;
+        padding-right: 10px;
+    }
+    .restriction {
+        align-items: center;
+    }
     .grid-container {
         display: grid;
         grid-template-areas:
@@ -253,6 +295,28 @@ ul.col-6 {
 
 /* media for the large screen */
 @media only screen and (min-width: 90.063em){
+    .grid-container-trafres-2 {
+        height: fit-content;
+        display: grid;
+        grid-template:7% 5% 80%/ auto;
+    }
+    .plans > article {
+        text-align: center;
+        flex: 1 0 13%;
+    }
+    .plans {
+        display: flex;
+        flex-direction: row;
+        padding: 5px 5px 15px 15px;
+        flex-wrap: wrap;
+    }
+    .first-res, .second-res, .third-res {
+        display: flex;
+        padding-right: 10px;
+    }
+    .restriction {
+        align-items: center;
+    }
     .grid-container {
         display: grid;
         grid-template-areas:
