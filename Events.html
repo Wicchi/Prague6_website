@@ -1,23 +1,22 @@
 <!DOCTYPE html>
-<html lang="en" xmlns="http://www.w3.org/1999/html">
+<html lang="en" itemscope="" itemtype="https://schema.org/WebPage" xmlns="http://www.w3.org/1999/xhtml">
 <head>
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta charset="UTF-8">
   <meta name="author" content="Shlapak Vladislav">
-  <meta name="description" content="Praha-6 district homepage">
-  <meta property="og:url"                content="" />
-  <meta property="og:type"               content="" />
-  <meta property="og:title"              content="Praha-6" />
-  <meta property="og:description"        content="" />
-  <meta property="og:image"              content="" />
-  <meta name="viewport" content="width=device-width; initial-scale=1.0; maximum-scale=1.0;">
-  <title>Praha-6 district homepage</title>
-  <link rel="stylesheet" type="text/css" href="first.css" />
+  <meta name="description" content="Home - Prague 6">
+  <meta property="og:url" content="">
+  <meta property="og:type" content="">
+  <meta property="og:title" content="Praha-6">
+  <meta property="og:description" content="">
+  <meta property="og:image" content="">
+  <title>Home - Praha 6</title>
+  <link rel="stylesheet" type="text/css" href="first.css">
 </head>
 <body>
 <div class="grid-container">
-  <header role="banner" itemscope itemtype="http://schema.org/WPHeader" class="nav">
-    <nav>
+  <header itemprop="hasPart" itemscope="" itemtype="https://schema.org/WPHeader" class="nav">
+    <nav itemprop="hasPart" itemscope="" itemtype="https://schema.org/SiteNavigationElement">
       <div class="nav__links">
         <a href="index.html">Homepage</a>
         <a href="contacts.html">Contact</a>
@@ -28,8 +27,9 @@
       </div>
       <div class="nav__search">
         <div class="search-container">
-          <form action="/searchresult.html">
-            <input type="text" placeholder="Search.." name="search">
+          <form action="searchresult.html" aria-labelledby="search" role="search">
+            <input type="text" placeholder="Search.." name="search" id="search">
+            <label for="search">Website search form</label>
             <button type="submit">Search<i class="fa fa-search"></i></button>
           </form>
         </div>
@@ -79,30 +79,30 @@
       </div>
     </main>
   </section>
-  <section>
-    <aside class="aside">
+  <div>
+    <aside class="aside" itemprop="isPartOf" itemscope="" itemtype="https://schema.org/WebSite">
       <p class="adv0"><img src="potion.png" alt="picture of battle potion" class="adv0__picture"><span class="adv0__text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis placerat.</span></p>
       <p class="adv1"><img src="potion.png" alt="picture of battle potion" class="adv1__picture"><span class="adv1__text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis placerat.</span></p>
-      <p class="adv2"><img src="sveijany.png" alt="picture of sveijany logo" class="adv2__picture"><span class="adv2__text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque ipsum.</span></p>
+      <p class="adv2"><img src="sveijany.png" alt="picture of svijany logo" class="adv2__picture"><span class="adv2__text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque ipsum.</span></p>
       <p class="adv3"><img src="czulogo.png" alt="picture of czu logo" class="adv3__picture"><span class="adv3__text">Nam quam dolor, posuere eget tincidunt at, aliquet quis risus. Cras venenatis, elit</span></p>
       <p class="adv4"><img src="selling.png" alt="picture of selling unit" class="adv4__picture"><span class="adv4__text">Nascetur ridiculus mus. Vivamus non rhoncus arcu. Curabitur sit amet </span></p>
     </aside>
-  </section>
-  <section class="footer">
-    <footer id="page-footer">
+  </div>
+  <div class="footer">
+    <footer id="page-footer" itemprop="hasPart" itemscope="" itemtype="https://schema.org/WPFooter">
       <div>
         <a href="https://www.czu.cz/en/">
-          <img alt="czulogo" src="czulogo.png" atl="czulogo" style="height: 20px;width: 20px">
+          <img alt="The logo of Czech Univercity of Life Sciences" src="czulogo.png" style="height: 20px;width: 20px">
         </a>
       </div>
       <div>
-        <p><time itemprop="startDate" datetime="2022-10-5">October 5, 2022</time> Copyright</p>
-        <h2><a href="https://www.linkedin.com/in/vladislavshlapak/" itemprop="url"> Shlapak Vladislav</a><br></h2>
-        <h2><a href="" itemprop="url"> </a><br></h2>
-        <h2><a href="" itemprop="url"> </a><br></h2>
+        <p><time itemprop="dateCreated" datetime="2022-10-05">October 5, 2022</time> Copyright</p>
+        <a href="https://www.linkedin.com/in/vladislavshlapak/" itemprop="url" style="font-size: 1.5em">Vladislav Shlapak</a><br>
+        <a href="https://about.me/mokrun" itemprop="url" style="font-size: 1.5em">Artem Makurin</a><br>
+        <a href="index.html" itemprop="url">Vera Vovan</a><br>
       </div>
     </footer>
-  </section>
+  </div>
 </div>
 </body>
 </html>

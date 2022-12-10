@@ -3,7 +3,10 @@
   box-sizing: border-box;
     background-color: white;
 }
-
+form label {
+    font-family: Arial, Verdana, sans-serif;
+    padding: 2rem 3rem;
+}
 
 /*hide the inputs/checkmarks and submenu*/
 input, ul.submenu {
