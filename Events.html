@@ -1,107 +1,129 @@
 <!DOCTYPE html>
 <html lang="en" xmlns="http://www.w3.org/1999/html">
+
 <head>
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta charset="UTF-8">
-  <meta name="author" content="Shlapak Vladislav">
-  <meta name="description" content="Praha-6 district homepage">
-  <meta property="og:url"                content="" />
-  <meta property="og:type"               content="" />
-  <meta property="og:title"              content="Praha-6" />
-  <meta property="og:description"        content="" />
-  <meta property="og:image"              content="" />
-  <meta name="viewport" content="width=device-width; initial-scale=1.0; maximum-scale=1.0;">
-  <title>Praha-6 district homepage</title>
-  <link rel="stylesheet" type="text/css" href="first.css" />
+    <!--meta + opengraphs-->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Shlapak Vladislav, Artem Makurin, Vavan Vera"> 
+    <meta name="description" content="The main website for the Prague 6 District">
+    <meta name="keywords" content="Web Design, Project, Prague, District"/>
+
+    <meta property="og:title" content="Prague 6 District"/>
+    <meta property="og:type" content="website"/>
+    <meta property="og:url" content="http://www.example.com/prague6.html"/> <!--change url-->
+    <meta property="og:image" content="https://picsum.photos/100/100"/> <!--maybe change to logo-->
+    <meta property="article:published_time" content="2022-12-11">
+    <meta property="article:updated_time" content="2022-12-11">
+
+    <title>Praha-6 District Page</title>
+    <link rel="stylesheet" type="text/css" href="first.css" />
 </head>
-<body>
-<div class="grid-container">
-  <header role="banner" itemscope itemtype="http://schema.org/WPHeader" class="nav">
-    <nav>
-      <div class="nav__links">
-        <a href="index.html">Homepage</a>
-        <a href="contacts.html">Contact</a>
-        <a href="loe.html">List of employers</a>
-        <a href="Events.html">Events</a>
-        <a href="TrafRes.html">Traffic restrictions</a>
-        <a href="DaGp.html">Develop and ground plan</a>
-      </div>
-      <div class="nav__search">
-        <div class="search-container">
-          <form action="/searchresult.html">
-            <input type="text" placeholder="Search.." name="search">
-            <button type="submit">Search<i class="fa fa-search"></i></button>
-          </form>
-        </div>
-      </div>
-    </nav>
-  </header>
+
+<body itemscope itemtype="https://schema.org/WebPage">
+
+  <div class="grid-container">
+    <!--top navigation + search-->
+    <header role="banner" itemscope itemtype="http://schema.org/WPHeader" class="nav">
+  
+      <nav itemscope itemtype="http://schema.org/SiteNavigationElement" >
+        <ul class="nav__links">
+          <li itemprop="itemListElement"><a href="index.html">Homepage</a></li>
+          <li itemprop="itemListElement"><a href="news.html">News</a></li>
+          <li itemprop="itemListElement"><a href="contacts.html">Contact</a></li>
+          <li itemprop="itemListElement"><a href="loe.html">List of employees</a></li>
+          <li itemprop="itemListElement"><a href="Events.html">Events</a></li>
+          <li itemprop="itemListElement"><a href="TrafRes.html">Traffic restrictions</a></li>
+          <li itemprop="itemListElement"><a href="DaGp.html">Develop and ground plan</a></li>
+        </ul>
+  
+        <div class="nav__search">
+          <div class="search-container">
+            <form action="searchresult.html">
+              <input type="text" placeholder="Search.." name="search">
+              <button type="submit" class="search-button">Search<i class="fa fa-search"></i></button>
+            </form>
+           </div>
+         </div>
+       </nav>
+    </header>
+    
   <section class="second_level_box">
-    <main class=”o-main” role=”main” id=”main” itemscope=”” itemprop=”mainContentOfPage” itemtype=”https://schema.org/NewsArticle">
+    <main class=”second_level_box” role=”main” id=”main” itemscope=”” itemprop=”mainContentOfPage” itemtype=”https://schema.org/CreativeWork">
       <div class="event-box">
         <h1>Latest events</h1>
-        <article class="events">
-          <h2>Event 1</h2>
+        <article class="events" itemscope="" itemtype="https://schema.org/NewsArticle">
+          <h2 itemprop="headline">Christmas Celebration in Prague</h2>
           <header>
-            <h3 class="postdatenews">10/10/2022</h3>
-            <h4 class="posttimenews">7:02 PM</h4>
+            <h3 class="postdatenews" itemprop="dateCreated">9/10/2022</h3>
+            <h4 class="posttimenews" itemprop="releasedEvent">7:04 PM</h4>
           </header>
-          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse nec dignissim urna, sed suscipit ante. Donec laoreet porta vestibulum...</p>
-          <figure>
-            <img src="event1.jpg" alt="Picture of mascot NE" style="width:100%">
-            <figcaption>Big beast, Shlapak Vladislav, Prague 2022.</figcaption>
-          </figure>
-        </article>
-        <article class="events">
-          <h2>Event 2</h2>
-          <header>
-            <h3 class="postdatenews">9/10/2022</h3>
-            <h4 class="posttimenews">7:04 PM</h4>
-          </header>
-          <p>Mauris dui enim, aliquam at maximus quis, feugiat non enim. Morbi non magna rutrum, fermentum diam vel, maximus justo...</p>
           <figure>
             <img src="event2.jpg" alt="Picture of muzeum NE" style="width:100%">
             <figcaption>NE muzeum, Shlapak Vladislav, Prague 2022.</figcaption>
           </figure>
+          <p style="text-align:justify" itemprop="articleSection"> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed neque ligula, tempor id leo at, finibus hendrerit libero. Suspendisse facilisis a 
+            elit nec fringilla. Etiam ut orci sit amet nulla sollicitudin ullamcorper. Aenean imperdiet est lacus, quis mattis ante fermentum in. Praesent 
+            convallis orci at odio rhoncus molestie. Aliquam erat volutpat. Mauris eleifend sodales nulla eu fringilla. Etiam sed accumsan elit, nec luctus leo.
+            <br/>
+            Phasellus pharetra justo et felis fermentum, in viverra tortor laoreet. Cras accumsan justo quis urna cursus, ut egestas est tempor. In mollis, 
+            risus nec iaculis ullamcorper, odio massa vestibulum est, et cursus urna libero eget metus. Etiam ullamcorper purus tellus, et rhoncus enim 
+            pulvinar ut. Morbi non velit libero. Aenean ipsum odio, convallis in sollicitudin et, hendrerit id odio. Donec ac orci imperdiet leo scelerisque 
+            scelerisque et vel neque. Proin nec tellus orci.
+            <br/>
+            In iaculis nec erat in interdum. Sed consectetur rhoncus varius. Aenean rutrum gravida faucibus. Aenean finibus enim enim, sit amet iaculis 
+            sapien maximus nec. Curabitur id fermentum est. Cras eu ipsum pharetra, fermentum elit at, pellentesque dolor. Mauris et est scelerisque urna 
+            convallis placerat non quis elit. Suspendisse varius ornare lorem, non malesuada ligula aliquam ornare. Cras ac vestibulum nisi. Vivamus ut 
+            maximus nulla, sit amet posuere magna. Donec vitae rhoncus sapien. Nunc orci nisi, ultricies ut odio ut, porttitor imperdiet eros. In dignissim 
+            diam sit amet aliquam vulputate. Vestibulum nec nunc non dolor sollicitudin iaculis quis sed leo. Nam pretium lacus in eros imperdiet, ac tempus est dictum. Donec ultricies justo eget commodo euismod. </p>
         </article>
-        <article class="events">
-          <h2>Event 3</h2>
+        <article class="events" itemscope="" itemtype="https://schema.org/NewsArticle">
+          <h2 itemprop="headline">Christmas Tree and Market</h2>
           <header>
-            <h3 class="postdatenews">8/10/2022</h3>
-            <h4 class="posttimenews">7:07 PM</h4>
+            <h3 class="postdatenews" itemprop="dateCreated">8/10/2022</h3>
+            <h4 class="posttimenews" itemprop="releasedEvent">7:07 PM</h4>
           </header>
-          <p> Duis vulputate nibh at felis pellentesque faucibus a in tellus...</p>
           <figure>
             <img src="event3.jpg" alt="Picture of Christmas tree" style="width:100%">
             <figcaption>Picture of Christmas tree on Václavské náměstí, Shlapak Vladislav, Prague 2022.</figcaption>
           </figure>
+          <p style="text-align:justify" itemprop="articleSection"> 
+            Quisque dapibus justo ut commodo consectetur. Fusce ac odio eros. Curabitur quis purus vel dui commodo accumsan ut porttitor orci. 
+            Nullam quis lectus volutpat, finibus magna ut, mollis dui. Maecenas eu orci at augue aliquam blandit. Maecenas facilisis nisi neque, 
+            sed tincidunt lorem porttitor ut. Pellentesque vulputate neque vel aliquam hendrerit. Morbi ut tincidunt purus. Ut volutpat purus id ultricies feugiat.
+            <br/>
+            Cras ac erat at ipsum dignissim molestie. Aliquam ut ante convallis, ultrices ligula non, tempor tellus. Aliquam vitae maximus nibh. 
+            Etiam scelerisque metus nec orci tempus porta. Cras massa libero, luctus at purus quis, tempus fermentum odio. Suspendisse a nisi pellentesque, 
+            facilisis erat in, lacinia diam. Aliquam in eleifend augue, at viverra tortor. Integer sed consectetur nisl, imperdiet mollis arcu. 
+            Donec in ante maximus ligula scelerisque suscipit ac non quam. </p>
         </article>
       </div>
     </main>
   </section>
-  <section>
-    <aside class="aside">
-      <p class="adv0"><img src="potion.png" alt="picture of battle potion" class="adv0__picture"><span class="adv0__text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis placerat.</span></p>
-      <p class="adv1"><img src="potion.png" alt="picture of battle potion" class="adv1__picture"><span class="adv1__text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis placerat.</span></p>
-      <p class="adv2"><img src="sveijany.png" alt="picture of sveijany logo" class="adv2__picture"><span class="adv2__text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque ipsum.</span></p>
-      <p class="adv3"><img src="czulogo.png" alt="picture of czu logo" class="adv3__picture"><span class="adv3__text">Nam quam dolor, posuere eget tincidunt at, aliquet quis risus. Cras venenatis, elit</span></p>
-      <p class="adv4"><img src="selling.png" alt="picture of selling unit" class="adv4__picture"><span class="adv4__text">Nascetur ridiculus mus. Vivamus non rhoncus arcu. Curabitur sit amet </span></p>
-    </aside>
-  </section>
-  <section class="footer">
-    <footer id="page-footer">
-      <div>
-        <a href="https://www.czu.cz/en/">
-          <img alt="czulogo" src="czulogo.png" atl="czulogo" style="height: 20px;width: 20px">
-        </a>
-      </div>
-      <div>
-        <p><time itemprop="startDate" datetime="2022-10-5">October 5, 2022</time> Copyright</p>
-        <h2><a href="https://www.linkedin.com/in/vladislavshlapak/" itemprop="url"> Shlapak Vladislav</a><br></h2>
-        <h2><a href="" itemprop="url"> </a><br></h2>
-        <h2><a href="" itemprop="url"> </a><br></h2>
-      </div>
-    </footer>
+
+    <section class="aside">
+        <aside>
+            <h2>Sponsors</h2>
+            <p class="adv0"><img src="potion.png" alt="picture of battle potion" class="adv0__picture"><span class="adv0__text">Battle Potion Energy Drink</span></p>
+            <p class="adv2"><img src="sveijany.png" alt="picture of sveijany logo" class="adv2__picture"><span class="adv2__text">Unknown Liquid Drink</span></p>
+            <p class="adv3"><img src="czulogo.png" alt="picture of czu logo" class="adv3__picture"><span class="adv3__text">Czech University of Life Sciences</span></p>
+            <p class="adv4"><img src="selling.png" alt="picture of selling unit" class="adv4__picture"><span class="adv4__text">Mysterious object</span></p>
+        </aside>
+    </section>
+
+
+    <!--footer content-->
+    <section class="footer">
+      <footer id="page-footer" itemprop="hasPart" itemscope="" itemtype="https://schema.org/WPFooter">
+          <aside>This website is a students' project for the Web Design course at the Czech University of Life Sciences created by 
+              <a href="https://www.linkedin.com/in/vladislavshlapak/" itemprop="url"> Vladislav Shlapak</a>, 
+              <a href="https://www.linkedin.com/in/vera-vavan-82b301219" itemprop="url">Vera Vavan</a> and 
+              <a href="https://about.me/mokrun"  itemprop="url">Artem Makurin</a><br></aside>    
+          <a href="https://www.czu.cz/en/" id="logo">
+              <img alt="czulogo" src="czulogo.png" atl="czulogo" style="height: 2em;width: 2em">
+          </a>
+          <p id="timestamp"><time itemprop="startDate" datetime="2022-10-5">October 5, 2022</time> Copyright</p>
+      </footer>
   </section>
 </div>
 </body>

@@ -1,49 +1,63 @@
 <!DOCTYPE html>
 <html lang="en" xmlns="http://www.w3.org/1999/html">
+
 <head>
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!--meta + opengraphs-->
     <meta charset="UTF-8">
-    <meta name="author" content="Shlapak Vladislav">
-    <meta name="description" content="Praha-6 district homepage">
-    <meta property="og:url"                content="" />
-    <meta property="og:type"               content="" />
-    <meta property="og:title"              content="Praha-6" />
-    <meta property="og:description"        content="" />
-    <meta property="og:image"              content="" />
-    <meta name="viewport" content="width=device-width; initial-scale=1.0; maximum-scale=1.0;">
-    <title>Praha-6 district homepage</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Shlapak Vladislav, Artem Makurin, Vavan Vera">
+    <meta name="description" content="The main website for the Prague 6 District">
+    <meta name="keywords" content="Web Design, Project, Prague, District"/>
+
+    <meta property="og:title" content="Prague 6 District"/>
+    <meta property="og:type" content="website"/>
+    <meta property="og:url" content="http://www.example.com/prague6.html"/> <!--change url-->
+    <meta property="og:image" content="https://picsum.photos/100/100"/> <!--maybe change to logo-->
+    <meta property="article:published_time" content="2022-12-11">
+    <meta property="article:updated_time" content="2022-12-11">
+
+    <title>Praha-6 District Page</title>
     <link rel="stylesheet" type="text/css" href="first.css" />
 </head>
-<body>
+
+<body itemscope itemtype="https://schema.org/WebPage">
+
 <div class="grid-container">
+    <!--top navigation + search-->
     <header role="banner" itemscope itemtype="http://schema.org/WPHeader" class="nav">
-        <nav>
-            <div class="nav__links">
-                <a href="index.html">Homepage</a>
-                <a href="contacts.html">Contact</a>
-                <a href="loe.html">List of employers</a>
-                <a href="Events.html">Events</a>
-                <a href="TrafRes.html">Traffic restrictions</a>
-                <a href="DaGp.html">Develop and ground plan</a>
-            </div>
-            <div class="nav__search">
-                <div class="search-container">
-                    <form action="/searchresult.html">
-                        <input type="text" placeholder="Search.." name="search">
-                        <button type="submit">Search<i class="fa fa-search"></i></button>
-                    </form>
-                </div>
-            </div>
-        </nav>
+
+            <nav itemscope itemtype="http://schema.org/SiteNavigationElement" >
+                    <ul class="nav__links">
+                        <li itemprop="itemListElement"><a href="index.html">Homepage</a></li>
+                        <li itemprop="itemListElement"><a href="news.html">News</a></li>
+                        <li itemprop="itemListElement"><a href="contacts.html">Contact</a></li>
+                        <li itemprop="itemListElement"><a href="loe.html">List of employees</a></li>
+                        <li itemprop="itemListElement"><a href="Events.html">Events</a></li>
+                        <li itemprop="itemListElement"><a href="TrafRes.html">Traffic restrictions</a></li>
+                        <li itemprop="itemListElement"><a href="DaGp.html">Develop and ground plan</a></li>
+                    </ul>
+
+                    <div class="nav__search">
+                        <div class="search-container">
+                            <form action="searchresult.html">
+                                <input type="text" placeholder="Search.." name="search">
+                                <button type="submit" class="search-button">Search<i class="fa fa-search"></i></button>
+                            </form>
+                        </div>
+                    </div>
+            </nav>
     </header>
+
     <section class="second_level_box">
         <main class=”o-main” role=”main” id=”main” itemscope=”” itemprop=”mainContentOfPage” itemtype=”https://schema.org/NewsArticle">
+            <h1>Develop and ground plan</h1>
             <div class="grid-container-trafres-2">
-                <p><strong>Develop and ground plan</strong></p>
+                
                 <a href="https://gis.praha6.cz/duhova-kniha-uzemni-rozvoj/" class="trafres-map">
                     <img src="background-trafres.png" alt="picture of praha 6" class="trafres-map"/>
                     <span class="text-map">Look at the map</span>
                 </a>
+
                 <div class="plans">
                     <article class="1-p">
                         <div class="Heading-text">
@@ -147,19 +161,18 @@
             </div>
         </main>
     </section>
+
+    <!--footer content-->
     <section class="footer">
-        <footer id="page-footer">
-            <div>
-                <a href="https://www.czu.cz/en/">
-                    <img alt="czulogo" src="czulogo.png" atl="czulogo" style="height: 20px;width: 20px">
-                </a>
-            </div>
-            <div>
-                <p><time itemprop="startDate" datetime="2022-10-5">October 5, 2022</time> Copyright</p>
-                <h2><a href="https://www.linkedin.com/in/vladislavshlapak/" itemprop="url"> Shlapak Vladislav</a><br></h2>
-                <h2><a href="" itemprop="url"> </a><br></h2>
-                <h2><a href="" itemprop="url"> </a><br></h2>
-            </div>
+        <footer id="page-footer" itemprop="hasPart" itemscope="" itemtype="https://schema.org/WPFooter">
+            <aside>This website is a students' project for the Web Design course at the Czech University of Life Sciences created by 
+                <a href="https://www.linkedin.com/in/vladislavshlapak/" itemprop="url"> Vladislav Shlapak</a>, 
+                <a href="https://www.linkedin.com/in/vera-vavan-82b301219" itemprop="url">Vera Vavan</a> and 
+                <a href="https://about.me/mokrun"  itemprop="url">Artem Makurin</a><br></aside>    
+            <a href="https://www.czu.cz/en/" id="logo">
+                <img alt="czulogo" src="czulogo.png" atl="czulogo" style="height: 2em;width: 2em">
+            </a>
+            <p id="timestamp"><time itemprop="startDate" datetime="2022-10-5">October 5, 2022</time> Copyright</p>
         </footer>
     </section>
 </div>

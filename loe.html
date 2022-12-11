@@ -1,102 +1,128 @@
 <!DOCTYPE html>
 <html lang="en" xmlns="http://www.w3.org/1999/html">
+
 <head>
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!--meta + opengraphs-->
     <meta charset="UTF-8">
-    <meta name="author" content="Shlapak Vladislav">
-    <meta name="description" content="Praha-6 district homepage">
-    <meta property="og:url"                content="" />
-    <meta property="og:type"               content="" />
-    <meta property="og:title"              content="Praha-6" />
-    <meta property="og:description"        content="" />
-    <meta property="og:image"              content="" />
-    <meta name="viewport" content="width=device-width; initial-scale=1.0; maximum-scale=1.0;">
-    <title>Praha-6 district homepage</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Shlapak Vladislav, Artem Makurin, Vavan Vera">
+    <meta name="description" content="The main website for the Prague 6 District">
+    <meta name="keywords" content="Web Design, Project, Prague, District"/>
+
+    <meta property="og:title" content="Prague 6 District"/>
+    <meta property="og:type" content="website"/>
+    <meta property="og:url" content="http://www.example.com/prague6.html"/> <!--change url-->
+    <meta property="og:image" content="https://picsum.photos/100/100"/> <!--maybe change to logo-->
+    <meta property="article:published_time" content="2022-12-11">
+    <meta property="article:updated_time" content="2022-12-11">
+
+    <title>Praha-6 District Page</title>
     <link rel="stylesheet" type="text/css" href="first.css" />
 </head>
-<body>
-<div class="grid-container">
-    <header role="banner" itemscope itemtype="http://schema.org/WPHeader" class="nav">
-        <nav>
-            <div class="nav__links">
-                <a href="index.html">Homepage</a>
-                <a href="contacts.html">Contact</a>
-                <a href="loe.html">List of employers</a>
-                <a href="Events.html">Events</a>
-                <a href="TrafRes.html">Traffic restrictions</a>
-                <a href="DaGp.html">Develop and ground plan</a>
-            </div>
-            <div class="nav__search">
-                <div class="search-container">
-                    <form action="/searchresult.html">
-                        <input type="text" placeholder="Search.." name="search">
-                        <button type="submit">Search<i class="fa fa-search"></i></button>
-                    </form>
-                </div>
-            </div>
-        </nav>
-    </header>
+
+<body itemscope itemtype="https://schema.org/WebPage">
+
+    <div class="grid-container">
+        <!--top navigation + search-->
+        <header role="banner" itemscope itemtype="http://schema.org/WPHeader" class="nav">
+    
+                <nav itemscope itemtype="http://schema.org/SiteNavigationElement" >
+                        <ul class="nav__links">
+                            <li itemprop="itemListElement"><a href="index.html">Homepage</a></li>
+                            <li itemprop="itemListElement"><a href="news.html">News</a></li>
+                            <li itemprop="itemListElement"><a href="contacts.html">Contact</a></li>
+                            <li itemprop="itemListElement"><a href="loe.html">List of employees</a></li>
+                            <li itemprop="itemListElement"><a href="Events.html">Events</a></li>
+                            <li itemprop="itemListElement"><a href="TrafRes.html">Traffic restrictions</a></li>
+                            <li itemprop="itemListElement"><a href="DaGp.html">Develop and ground plan</a></li>
+                        </ul>
+    
+                        <div class="nav__search">
+                            <div class="search-container">
+                                <form action="/searchresult.html">
+                                    <input type="text" placeholder="Search.." name="search">
+                                    <button type="submit" class="search-button">Search<i class="fa fa-search"></i></button>
+                                </form>
+                            </div>
+                        </div>
+                </nav>
+        </header>
+
     <section class="second_level_box">
-        <main class=”o-main” role=”main” id=”main” itemscope=”” itemprop=”mainContentOfPage” itemtype=”https://schema.org/NewsArticle">
-            <article class="head-of-district">
-                    <figure class="hof-pic">
-                        <img src="hof.png" alt="Picture head of district">
-                        <figcaption class="fig-cap">Mr. Mya, head of Praha 6 district.</figcaption>
-                    </figure>
-                    <div class="hof-describe">
-                        <ul>
-                            <li>Sed sagittis mattis eleifend. Nunc elementum, metus vitae dapibus ultrices, leo urna efficitur nisi, non ultricies felis ex in metus.</li>
-                            <li>Praesent pulvinar metus sit amet ipsum aliquet vestibulum. Morbi porttitor varius pretium. Nulla nibh augue, ultricies ut luctus ut.</li>
-                            <li>Sed at urna ut metus posuere bibendum vel quis ante. Quisque egestas sollicitudin libero non tristique. </li>
-                            <li>Suspendisse bibendum luctus purus, vel viverra nisi. Vestibulum imperdiet nibh nibh, ut pulvinar dolor laoreet a. Sed rutrum orci id purus tempor feugiat.</li>
-                        </ul>
-                    </div>
+        <main class=”second_level_box” role=”main” id=”main” itemscope=”” itemprop=”mainContentOfPage” itemtype=”https://schema.org/NewsArticle">
+            <h1>List of Employees</h1>
+
+            <article class="employee">
+                <figure class="employee-pic">
+                    <img src="hof.png" alt="Picture head of district">
+                    <figcaption>Mr. Mya</figcaption>
+                </figure>
+
+                <div class="employee-desc">
+                    <h2>Head of Praha 6 district</h2>
+                    <h3>Lead of all activities in Prague 6 and responsible most operations regarding the district </h3>
+                    <ul itemscope itemtype="http://schema.org/ItemList" >
+                        <li itemprop="itemListElement">Phone Number: 729 523 542</li>
+                        <li itemprop="itemListElement">Email Adress: praha6@gmail.com</li>
+                    </ul>
+                </div>
             </article>
-            <article class="head-of-media-center">
-                    <figure class="homc-pic">
-                        <img src="homc.png" alt="Picture head of media center">
-                        <figcaption>Mr. Smith, head of media center. Good boy.</figcaption>
-                    </figure>
-                    <div class="homc-describe">
-                        <ul>
-                            <li>Sed sagittis mattis eleifend. Nunc elementum, metus vitae dapibus ultrices, leo urna efficitur nisi, non ultricies felis ex in metus.</li>
-                            <li> Cras dapibus ante in magna mollis semper. Fusce egestas ornare erat, eu vehicula dui interdum finibus. Suspendisse potenti.</li>
-                            <li>Vivamus mattis justo id ipsum fermentum, in dictum quam facilisis. In vel lacinia quam, vel sagittis lacus. Proin molestie aliquam elit, vel dapibus enim facilisis in.</li>
-                            <li>Nulla rhoncus, tortor eget hendrerit tincidunt, justo mauris iaculis mi, non vehicula ligula nisl pharetra odio. Sed sagittis at purus ac blandit.</li>
-                        </ul>
-                    </div>
+
+            <article class="employee">
+                <figure class="employee-pic">
+                     <img src="homc.png" alt="Picture head of media center">
+                    <figcaption>Mr. Smith</figcaption>
+                </figure>
+
+                <div class="employee-desc"> 
+                    <h2>Head of media center</h2>
+                    <h3>Responsible for the promotion of events and activities, as well as the social media sites</h3>
+                    <ul itemscope itemtype="http://schema.org/ItemList" >
+                        <li itemprop="itemListElement">Phone Number: 825 245 321</li>
+                        <li itemprop="itemListElement">Email Address: praha6media@gmail.com</li>
+                        <li itemprop="itemListElement">Instagram: @goodboy</li>
+                    </ul>
+                </div>
             </article>
-            <article class="secretary">
-                    <div class="sct-pic">
-                        <figure>
-                            <img src="sct.png" alt="Picture of secretary">
-                            <figcaption>Ms. Monnika, secretary of Praha 6 office.</figcaption>
-                        </figure>
-                    </div>
-                    <div class="sct-describe">
-                        <ul>
-                            <li>Sed sagittis mattis eleifend. Nunc elementum, metus vitae dapibus ultrices, leo urna efficitur nisi, non ultricies felis ex in metus.</li>
-                            <li>Duis tincidunt felis ante, in rhoncus est pellentesque eget. Ut rhoncus accumsan porta.</li>
-                            <li>Donec tincidunt molestie erat, sed mollis justo elementum eu. </li>
-                            <li>Proin et blandit mauris. Suspendisse bibendum luctus purus, vel viverra nisi. Vestibulum imperdiet nibh nibh, ut pulvinar dolor laoreet a.</li>
+
+            <article class="employee">
+                    <figure class="employee-pic">
+                        <img src="sct.png" alt="Picture of secretary">
+                        <figcaption>Ms. Monnika</figcaption>
+                    </figure>
+                    
+                    <div class="employee-desc">
+                        <h2>Secretary of Praha 6 office</h2>
+                        <h3>Available to answer any community questions and help with organization</h3>
+                        <ul itemscope itemtype="http://schema.org/ItemList" >
+                            <li itemprop="itemListElement">Phone Number: 666 666 666</li>
+                            <li itemprop="itemListElement">Email Address: praha6query@hotmail.com</li>
                         </ul>
                     </div>
             </article>
         </main>
     </section>
+
+    <section class="aside">
+        <aside>
+            <h2>Sponsors</h2>
+            <p class="adv0"><img src="potion.png" alt="picture of battle potion" class="adv0__picture"><span class="adv0__text">Battle Potion Energy Drink</span></p>
+            <p class="adv2"><img src="sveijany.png" alt="picture of sveijany logo" class="adv2__picture"><span class="adv2__text">Unknown Liquid Drink</span></p>
+            <p class="adv3"><img src="czulogo.png" alt="picture of czu logo" class="adv3__picture"><span class="adv3__text">Czech University of Life Sciences</span></p>
+            <p class="adv4"><img src="selling.png" alt="picture of selling unit" class="adv4__picture"><span class="adv4__text">Mysterious object</span></p>
+        </aside>
+    </section>
+    <!--footer content-->
     <section class="footer">
-        <footer id="page-footer">
-            <div>
-                <a href="https://www.czu.cz/en/">
-                    <img alt="czulogo" src="czulogo.png" atl="czulogo" style="height: 20px;width: 20px">
-                </a>
-            </div>
-            <div>
-                <p><time itemprop="startDate" datetime="2022-10-5">October 5, 2022</time> Copyright</p>
-                <h2><a href="https://www.linkedin.com/in/vladislavshlapak/" itemprop="url"> Shlapak Vladislav</a><br></h2>
-                <h2><a href="" itemprop="url"> </a><br></h2>
-                <h2><a href="" itemprop="url"> </a><br></h2>
-            </div>
+        <footer id="page-footer" itemprop="hasPart" itemscope="" itemtype="https://schema.org/WPFooter">
+            <aside>This website is a students' project for the Web Design course at the Czech University of Life Sciences created by 
+                <a href="https://www.linkedin.com/in/vladislavshlapak/" itemprop="url"> Vladislav Shlapak</a>, 
+                <a href="https://www.linkedin.com/in/vera-vavan-82b301219" itemprop="url">Vera Vavan</a> and 
+                <a href="https://about.me/mokrun"  itemprop="url">Artem Makurin</a><br></aside>    
+            <a href="https://www.czu.cz/en/" id="logo">
+                <img alt="czulogo" src="czulogo.png" atl="czulogo" style="height: 2em;width: 2em">
+            </a>
+            <p id="timestamp"><time itemprop="startDate" datetime="2022-10-5">October 5, 2022</time> Copyright</p>
         </footer>
     </section>
 </div>
