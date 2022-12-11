@@ -188,11 +188,11 @@ footer > aside {
 }
 
 #logo {
-    float: inline-start;
+    float: start;
 }
 
 #timestamp {
-    float:inline-end;
+    float:end;
     margin: 0;
     height: 2em;
     padding-right: 0.5em;
@@ -475,29 +475,34 @@ input:checked~ul.submenu {
 
 
 /* media for the large screen */
-@media only screen and (min-width: 97.063em){
+@media only screen and (min-width: 97.063em) {
     .grid-container-trafres-2 {
         height: fit-content;
         display: grid;
         grid-template:7% 5% 80%/ auto;
     }
+
     .plans > article {
         text-align: center;
         flex: 1 0 13%;
     }
+
     .plans {
         display: flex;
         flex-direction: row;
         padding: 5px 5px 15px 15px;
         flex-wrap: wrap;
     }
+
     .first-res, .second-res, .third-res {
         display: flex;
         padding-right: 10px;
     }
+
     .restriction {
         align-items: center;
     }
+
     .grid-container {
         display: grid;
         grid-template-areas:
@@ -505,6 +510,7 @@ input:checked~ul.submenu {
         'main main main main main main main aside'
         'footer footer footer footer footer footer footer footer';
     }
+
     nav {
         grid-area: tonav;
         padding-bottom: 1rem;
@@ -516,6 +522,7 @@ input:checked~ul.submenu {
         flex-direction: row;
         flex-flow: row wrap;
     }
+
     .nav__search {
         position: absolute;
         display: block;
@@ -525,6 +532,7 @@ input:checked~ul.submenu {
         top: 0.5em;
         right: 0.5em;
     }
+
     .nav__search input[type=text] {
         float: right;
         display: block;
@@ -541,31 +549,33 @@ input:checked~ul.submenu {
         padding: 2px;
         width: fit-content;
     }
+
     .second_level_box {
         grid-area: main;
     }
+
     .adv0, .adv1, .adv2, .adv3, .adv4 {
         display: flex;
         flex-direction: column;
         justify-content: space-between;
     }
+
     .adv0__picture, .adv1__picture, .adv2__picture, .adv3__picture, .adv4__picture {
         width: 50px;
         height: 50px;
     }
+
     .news-text {
         padding: 0 25em 0 25em;
     }
+
     .aside {
         float: right;
         justify-content: center;
         grid-area: aside;
     }
+
     .footer {
         grid-area: footer;
     }
-}
-
-/* media for the small screen */
-@media only screen and (min-width: 40.063em) {
 }
