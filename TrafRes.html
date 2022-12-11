@@ -1,59 +1,58 @@
 <!DOCTYPE html>
-<html lang="en" xmlns="http://www.w3.org/1999/html">
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
 
 <head>
     <!--meta + opengraphs-->
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="author" content="Shlapak Vladislav, Artem Makurin, Vavan Vera">
-    <meta name="description" content="The main website for the Prague 6 District">
-    <meta name="keywords" content="Web Design, Project, Prague, District"/>
-
-    <meta property="og:title" content="Prague 6 District"/>
-    <meta property="og:type" content="website"/>
-    <meta property="og:url" content="http://www.example.com/prague6.html"/> <!--change url-->
-    <meta property="og:image" content="https://picsum.photos/100/100"/> <!--maybe change to logo-->
+    <meta name="description" content="The traffic restrictions webpage for the Prague 6 District">
+    <meta name="keywords" content="Web Design, Project, Prague, District, Traffic, Traffic restrictions">
+    <meta property="og:title" content="Prague 6 District Traffic restrictions">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="TrafRes.html"> <!--change url-->
+    <meta property="og:image" content="praha6logo.png"> <!--maybe change to logo-->
     <meta property="article:published_time" content="2022-12-11">
     <meta property="article:updated_time" content="2022-12-11">
-
-    <title>Praha-6 District Page</title>
-    <link rel="stylesheet" type="text/css" href="first.css" />
+    <title>Praha-6 District Traffic restrictions webpage</title>
+    <link rel="stylesheet" type="text/css" href="first.css" >
 </head>
 
 <body itemscope itemtype="https://schema.org/WebPage">
 
-    <div class="grid-container">
-        <!--top navigation + search-->
-        <header role="banner" itemscope itemtype="http://schema.org/WPHeader" class="nav">
-    
-                <nav itemscope itemtype="http://schema.org/SiteNavigationElement" >
-                        <ul class="nav__links">
-                            <li itemprop="itemListElement"><a href="index.html">Homepage</a></li>
-                            <li itemprop="itemListElement"><a href="news.html">News</a></li>
-                            <li itemprop="itemListElement"><a href="contacts.html">Contact</a></li>
-                            <li itemprop="itemListElement"><a href="loe.html">List of employees</a></li>
-                            <li itemprop="itemListElement"><a href="Events.html">Events</a></li>
-                            <li itemprop="itemListElement"><a href="TrafRes.html">Traffic restrictions</a></li>
-                            <li itemprop="itemListElement"><a href="DaGp.html">Develop and ground plan</a></li>
-                        </ul>
-    
-                        <div class="nav__search">
-                            <div class="search-container">
-                                <form action="searchresult.html">
-                                    <input type="text" placeholder="Search.." name="search">
-                                    <button type="submit" class="search-button">Search<i class="fa fa-search"></i></button>
-                                </form>
-                            </div>
-                        </div>
-                </nav>
-        </header>
+<div class="grid-container">
+    <!--top navigation + search-->
+    <header itemprop="hasPart" itemscope itemtype="http://schema.org/WPHeader" class="nav">
 
-    <section class="second_level_box">
-        <main class=”second_level_box” role=”main” id=”main” itemscope=”” itemprop=”mainContentOfPage” itemtype=”https://schema.org/NewsArticle">
-            <h1>Traffic Restrictions</h1>
-            <div class="grid-container-trafres">
+        <nav itemprop="hasPart" itemscope itemtype="http://schema.org/SiteNavigationElement" >
+            <ul class="nav__links">
+                <li ><a href="index.html">Homepage</a></li>
+                <li><a href="news.html">News</a></li>
+                <li><a href="contacts.html">Contact</a></li>
+                <li><a href="loe.html">List of employees</a></li>
+                <li><a href="Events.html">Events</a></li>
+                <li><a href="TrafRes.html">Traffic restrictions</a></li>
+                <li><a href="DaGp.html">Develop and ground plan</a></li>
+            </ul>
+
+            <div class="nav__search">
+                <div class="search-container">
+                    <form action="searchresult.html" aria-labelledby="search" role="search">
+                        <input type="text" placeholder="Enter search term here" name="search" id="search">
+                        <label for="search" >Search form</label>
+                        <button type="submit" class="search-button">Search<i class="fa fa-search"></i></button>
+                    </form>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <div class="second_level_box" itemprop="mainEntity" itemscope itemtype="https://schema.org/CreativeWork">
+        <main class=”second_level_box” id=”main”>
+            <h1 class="heading">Traffic restrictions in Prague</h1>
+            <div class="grid-container-trafres-1">
                 <div class="grid-item-trafres">
-                    <label for="dropdownrestriction"></label>
+                    <label for="dropdownrestriction">Street selection menu</label>
                     <select id="dropdownrestriction" name="dropdownrestriction" onchange="location = this.value;">
                         <option value="TrafRes.html">All streets</option>
                         <option value="Albanska.html">Albánská</option>
@@ -63,58 +62,57 @@
                 </div>
 
                 <a href="https://en.mapy.cz/zakladni?source=area&id=26629&x=14.3329719&y=50.1038360&z=13" class="trafres-map">
-                    <img src="background-trafres.png" alt="picture of praha 6" class="trafres-map"/>
+                    <img src="background-trafres.png" alt="picture of praha 6" class="trafres-map">
                     <span class="text-map">Look at the map</span>
                 </a>
                 <div class="restriction">
-                    <div class="first-res">
+                    <div class="first-res" itemscope itemtype="http://schema.org/Event">
                         <div class="location">
-                            <h2 class="street-name"><a href="Albanska.html">Albánská</a></h2>
-                            <p class="date"><time>4.12.2022-8.12.2022</time></p>
+                            <h2 class="street-name" itemprop="location"><a href="Albanska.html">Albánská</a></h2>
+                            <p class="date"><time datetime="2022-12-04" itemprop="startDate">4.12.2022</time>-<time datetime="2022-12-08" itemprop="endDate">8.12.2022</time></p>
                         </div>
-                        <div class="res-desc">
+                        <div class="res-desc" itemprop="description">
                             <p>Sed at urna ut metus posuere bibendum vel quis ante. Quisque egestas sollicitudin libero non tristique. Proin justo urna, fringilla ut vehicula id, cursus id tortor. Fusce porta dapibus mi vitae tincidunt. In gravida sit amet diam nec vestibulum.</p>
                         </div>
                     </div>
 
-                    <div class="second-res">
+                    <div class="second-res" itemscope itemtype="http://schema.org/Event">
                         <div class="location">
-                            <h2 class="street-name"><a href="Belohorska.html">Bělohorská</a></h2>
-                            <p class="date"><time>1.12.2022-23.12.2022</time></p>
+                            <h2 class="street-name" itemprop="location"><a href="Belohorska.html">Bělohorská</a></h2>
+                            <p class="date"><time datetime="2022-12-01" itemprop="startDate">1.12.2022</time>-<time datetime="2022-12-23" itemprop="endDate">23.12.2022</time></p>
                         </div>
-                        <div class="res-desc">
+                        <div class="res-desc" itemprop="description">
                             <p>Sed at urna ut metus posuere bibendum vel quis ante. Quisque egestas sollicitudin libero non tristique. Proin justo urna, fringilla ut vehicula id, cursus id tortor. Fusce porta dapibus mi vitae tincidunt. In gravida sit amet diam nec vestibulum.</p>
                         </div>
                     </div>
 
-                    <div class="third-res">
+                    <div class="third-res" itemscope itemtype="http://schema.org/Event">
                         <div class="location">
-                            <h2 class="street-name"><a href="Dejvicka.html">Dejvická</a></h2>
-                            <p class="date"><time>22.11.2022-3.12.2022</time></p>
+                            <h2 class="street-name" itemprop="location"><a href="Dejvicka.html">Dejvická</a></h2>
+                            <p class="date"><time datetime="2022-11-22" itemprop="startDate">22.11.2022</time>-<time datetime="2022-12-03" itemprop="endDate">3.12.2022</time></p>
                         </div>
-                        <div class="res-desc">
+                        <div class="res-desc" itemprop="description">
                             <p>Sed at urna ut metus posuere bibendum vel quis ante. Quisque egestas sollicitudin libero non tristique. Proin justo urna, fringilla ut vehicula id, cursus id tortor. Fusce porta dapibus mi vitae tincidunt. In gravida sit amet diam nec vestibulum.</p>
                         </div>
                     </div>
-
                 </div>
             </div>
         </main>
-    </section>
+    </div>
 
     <!--footer content-->
-    <section class="footer">
-        <footer id="page-footer" itemprop="hasPart" itemscope="" itemtype="https://schema.org/WPFooter">
-            <aside>This website is a students' project for the Web Design course at the Czech University of Life Sciences created by 
-                <a href="https://www.linkedin.com/in/vladislavshlapak/" itemprop="url"> Vladislav Shlapak</a>, 
-                <a href="https://www.linkedin.com/in/vera-vavan-82b301219" itemprop="url">Vera Vavan</a> and 
-                <a href="https://about.me/mokrun"  itemprop="url">Artem Makurin</a><br></aside>    
+    <div class="footer">
+        <footer id="page-footer" itemprop="hasPart" itemscope itemtype="https://schema.org/WPFooter">
+            <aside>This website is a students' project for the Web Design course at the Czech University of Life Sciences created by
+                <a href="https://www.linkedin.com/in/vladislavshlapak/" itemprop="url"> Vladislav Shlapak</a>,
+                <a href="https://www.linkedin.com/in/vera-vavan-82b301219" itemprop="url">Vera Vavan</a> and
+                <a href="https://about.me/mokrun"  itemprop="url">Artem Makurin</a><br></aside>
             <a href="https://www.czu.cz/en/" id="logo">
-                <img alt="czulogo" src="czulogo.png" atl="czulogo" style="height: 2em;width: 2em">
+                <img alt="czulogo" src="czulogo.png" style="height: 2em;width: 2em">
             </a>
-            <p id="timestamp"><time itemprop="startDate" datetime="2022-10-5">October 5, 2022</time> Copyright</p>
+            <p id="timestamp"><time itemprop="dateCreated" datetime="2022-10-05">October 5, 2022</time> Copyright</p>
         </footer>
-    </section>
+    </div>
 </div>
 </body>
 </html>

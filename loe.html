@@ -1,58 +1,57 @@
 <!DOCTYPE html>
-<html lang="en" xmlns="http://www.w3.org/1999/html">
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
 
 <head>
     <!--meta + opengraphs-->
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="author" content="Shlapak Vladislav, Artem Makurin, Vavan Vera">
-    <meta name="description" content="The main website for the Prague 6 District">
-    <meta name="keywords" content="Web Design, Project, Prague, District"/>
-
-    <meta property="og:title" content="Prague 6 District"/>
-    <meta property="og:type" content="website"/>
-    <meta property="og:url" content="http://www.example.com/prague6.html"/> <!--change url-->
-    <meta property="og:image" content="https://picsum.photos/100/100"/> <!--maybe change to logo-->
+    <meta name="description" content="The page with list of employees for the Prague 6 District">
+    <meta name="keywords" content="Web Design, Project, Prague, District, Employees">
+    <meta property="og:title" content="Prague 6 District list of employees">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="loe.html"> <!--change url-->
+    <meta property="og:image" content="praha6logo.png"> <!--maybe change to logo-->
     <meta property="article:published_time" content="2022-12-11">
     <meta property="article:updated_time" content="2022-12-11">
-
-    <title>Praha-6 District Page</title>
-    <link rel="stylesheet" type="text/css" href="first.css" />
+    <title>Praha-6 District Webpage with list of employees</title>
+    <link rel="stylesheet" type="text/css" href="first.css" >
 </head>
 
 <body itemscope itemtype="https://schema.org/WebPage">
 
     <div class="grid-container">
         <!--top navigation + search-->
-        <header role="banner" itemscope itemtype="http://schema.org/WPHeader" class="nav">
+        <header itemprop="hasPart" itemscope itemtype="http://schema.org/WPHeader" class="nav">
     
-                <nav itemscope itemtype="http://schema.org/SiteNavigationElement" >
+                <nav itemprop="hasPart" itemscope itemtype="http://schema.org/SiteNavigationElement" >
                         <ul class="nav__links">
-                            <li itemprop="itemListElement"><a href="index.html">Homepage</a></li>
-                            <li itemprop="itemListElement"><a href="news.html">News</a></li>
-                            <li itemprop="itemListElement"><a href="contacts.html">Contact</a></li>
-                            <li itemprop="itemListElement"><a href="loe.html">List of employees</a></li>
-                            <li itemprop="itemListElement"><a href="Events.html">Events</a></li>
-                            <li itemprop="itemListElement"><a href="TrafRes.html">Traffic restrictions</a></li>
-                            <li itemprop="itemListElement"><a href="DaGp.html">Develop and ground plan</a></li>
+                            <li ><a href="index.html">Homepage</a></li>
+                            <li><a href="news.html">News</a></li>
+                            <li><a href="contacts.html">Contact</a></li>
+                            <li><a href="loe.html">List of employees</a></li>
+                            <li><a href="Events.html">Events</a></li>
+                            <li><a href="TrafRes.html">Traffic restrictions</a></li>
+                            <li><a href="DaGp.html">Develop and ground plan</a></li>
                         </ul>
-    
-                        <div class="nav__search">
-                            <div class="search-container">
-                                <form action="/searchresult.html">
-                                    <input type="text" placeholder="Search.." name="search">
-                                    <button type="submit" class="search-button">Search<i class="fa fa-search"></i></button>
-                                </form>
-                            </div>
+
+                    <div class="nav__search">
+                        <div class="search-container">
+                            <form action="searchresult.html" aria-labelledby="search" role="search">
+                                <input type="text" placeholder="Enter search term here" name="search" id="search">
+                                <label for="search" >Search form</label>
+                                <button type="submit" class="search-button">Search<i class="fa fa-search"></i></button>
+                            </form>
                         </div>
+                    </div>
                 </nav>
         </header>
 
-    <section class="second_level_box">
-        <main class=”second_level_box” role=”main” id=”main” itemscope=”” itemprop=”mainContentOfPage” itemtype=”https://schema.org/NewsArticle">
+    <div class="second_level_box">
+        <main class="second_level_box" id="main" itemscope itemprop="mainEntity" itemtype="https://schema.org/NewsArticle">
             <h1>List of Employees</h1>
 
-            <article class="employee">
+            <div class="employee">
                 <figure class="employee-pic">
                     <img src="hof.png" alt="Picture head of district">
                     <figcaption>Mr. Mya</figcaption>
@@ -66,9 +65,9 @@
                         <li itemprop="itemListElement">Email Adress: praha6@gmail.com</li>
                     </ul>
                 </div>
-            </article>
+            </div>
 
-            <article class="employee">
+            <div class="employee">
                 <figure class="employee-pic">
                      <img src="homc.png" alt="Picture head of media center">
                     <figcaption>Mr. Smith</figcaption>
@@ -83,9 +82,9 @@
                         <li itemprop="itemListElement">Instagram: @goodboy</li>
                     </ul>
                 </div>
-            </article>
+            </div>
 
-            <article class="employee">
+            <div class="employee">
                     <figure class="employee-pic">
                         <img src="sct.png" alt="Picture of secretary">
                         <figcaption>Ms. Monnika</figcaption>
@@ -99,11 +98,11 @@
                             <li itemprop="itemListElement">Email Address: praha6query@hotmail.com</li>
                         </ul>
                     </div>
-            </article>
+            </div>
         </main>
-    </section>
+    </div>
 
-    <section class="aside">
+    <div class="aside" itemprop="isPartOf" itemscope itemtype="http://schema.org/WebSite">
         <aside>
             <h2>Sponsors</h2>
             <p class="adv0"><img src="potion.png" alt="picture of battle potion" class="adv0__picture"><span class="adv0__text">Battle Potion Energy Drink</span></p>
@@ -111,20 +110,20 @@
             <p class="adv3"><img src="czulogo.png" alt="picture of czu logo" class="adv3__picture"><span class="adv3__text">Czech University of Life Sciences</span></p>
             <p class="adv4"><img src="selling.png" alt="picture of selling unit" class="adv4__picture"><span class="adv4__text">Mysterious object</span></p>
         </aside>
-    </section>
+    </div>
     <!--footer content-->
-    <section class="footer">
-        <footer id="page-footer" itemprop="hasPart" itemscope="" itemtype="https://schema.org/WPFooter">
+    <div class="footer">
+        <footer id="page-footer" itemprop="hasPart" itemscope itemtype="https://schema.org/WPFooter">
             <aside>This website is a students' project for the Web Design course at the Czech University of Life Sciences created by 
                 <a href="https://www.linkedin.com/in/vladislavshlapak/" itemprop="url"> Vladislav Shlapak</a>, 
                 <a href="https://www.linkedin.com/in/vera-vavan-82b301219" itemprop="url">Vera Vavan</a> and 
                 <a href="https://about.me/mokrun"  itemprop="url">Artem Makurin</a><br></aside>    
             <a href="https://www.czu.cz/en/" id="logo">
-                <img alt="czulogo" src="czulogo.png" atl="czulogo" style="height: 2em;width: 2em">
+                <img alt="czulogo" src="czulogo.png"  style="height: 2em;width: 2em">
             </a>
-            <p id="timestamp"><time itemprop="startDate" datetime="2022-10-5">October 5, 2022</time> Copyright</p>
+            <p id="timestamp"><time itemprop="dateCreated" datetime="2022-10-05">October 5, 2022</time> Copyright</p>
         </footer>
-    </section>
+    </div>
 </div>
 </body>
 </html>
