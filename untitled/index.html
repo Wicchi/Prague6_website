@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+    <!--meta + opengraphs-->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Shlapak Vladislav, Artem Makurin, Vavan Vera">
+    <meta name="description" content="The Homepage for the Prague 6 District">
+    <meta name="keywords" content="Web Design, Project, Prague 6, District, index">
+    <meta property="og:title" content="Prague 6 District Homepage">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="index.html"> <!--change url-->
+    <meta property="og:image" content="praha6logo.png"> <!--maybe change to logo-->
+    <meta property="article:published_time" content="2022-12-11">
+    <meta property="article:updated_time" content="2022-12-11">
+    <title>Praha-6 District HomePage</title>
+    <link rel="stylesheet" type="text/css" href="first.css">
+</head>
+
+<body itemscope itemtype="https://schema.org/WebPage">
+
+<div class="grid-container">
+    <!--top navigation + search-->
+    <header itemprop="hasPart" itemscope itemtype="http://schema.org/WPHeader" class="nav">
+
+            <nav itemprop="hasPart" itemscope itemtype="http://schema.org/SiteNavigationElement" >
+                    <ul class="nav__links">
+                        <li ><a href="index.html">Homepage</a></li>
+                        <li><a href="news.html">News</a></li>
+                        <li><a href="contacts.html">Contact</a></li>
+                        <li><a href="loe.html">List of employees</a></li>
+                        <li><a href="Events.html">Events</a></li>
+                        <li><a href="TrafRes.html">Traffic restrictions</a></li>
+                        <li><a href="DaGp.html">Develop and ground plan</a></li>
+                    </ul>
+
+                <div class="nav__search">
+                    <div class="search-container">
+                        <form action="searchresult.html" aria-labelledby="search" role="search">
+                            <input type="text" placeholder="Enter search term here" name="search" id="search">
+                            <label for="search" >Search form</label>
+                            <button type="submit" class="search-button">Search<i class="fa fa-search"></i></button>
+                        </form>
+                    </div>
+                </div>
+            </nav>
+    </header>
+
+    <!--main content-->
+    <div class="second_level_box">
+        <main class="second_level_box" id="main" itemscope itemprop="mainEntity" itemtype="https://schema.org/CreativeWork">
+            <h1>"Official" Homepage of the Prague 6 District</h1>
+            <p class="about">Welcome to the main page for the Prague 6 district where you can find out anything you might need to know that is happening
+                in your neighbourhood right now. <br> This district is located in the beautiful city of Prague, Czech Republic, and it is most
+                known for the great student community in the area! It consists of the municipal districts Lysolaje, Nebusice, Predni Kopanina and 
+                Suchdol. Prague 6 is also the largest municipal district in Prague with 100 000 inhabitants and 41km<sup>2</sup>.   <br>
+                 Here you can find out the latest news, traffic restrictions, best events, etc. Feel free to browse through the various tabs 
+                 and explore everything that Prague 6 can bring you! You can also contact us and ask us anything which might be of your interest, 
+                 or meet us in person.
+            </p>
+            <div class="homepage-content">
+                <div>
+                    <article class="news" itemscope itemtype="https://schema.org/NewsArticle">
+                        <h2 itemprop="headline"><a href="News1.html">Town Hall News</a></h2>
+                        <header>
+                            <h3 class="postdatenews" itemprop="dateCreated">10/10/2022</h3>
+                            <h4 class="posttimenews" itemprop="releasedEvent">7:02 PM</h4>
+                        </header>
+                        <p itemprop="articleSection">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut id nibh ullamcorper, rutrum metus sit amet, rhoncus urna. Curabitur elit mauris, molestie ut tortor quis, 
+                            pellentesque iaculis ante. Maecenas nec tincidunt ex, eget ultrices nulla. Cras fringilla enim ac euismod lobortis. In quis mi blandit, semper nisl bibendum, faucibus 
+                            libero. Aliquam viverra, lacus vitae iaculis interdum, nunc arcu sodales urna, vitae auctor urna dui vitae augue... </p>
+                        <a href="News1.html">Read more...</a>
+                    </article>
+                    <article class="news" itemscope itemtype="https://schema.org/NewsArticle">
+                        <h2 itemprop="headline"><a href="News2.html">Active Prague 6</a></h2>
+                        <header>
+                            <h3 class="postdatenews" itemprop="dateCreated">9/10/2022</h3>
+                            <h4 class="posttimenews" itemprop="releasedEvent">7:04 PM</h4>
+                        </header>
+                        <p itemprop="articleSection">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut id nibh ullamcorper, rutrum metus sit amet, rhoncus urna. Curabitur elit mauris, molestie ut tortor quis, 
+                            pellentesque iaculis ante. Maecenas nec tincidunt ex, eget ultrices nulla. Cras fringilla enim ac euismod lobortis. In quis mi blandit, semper nisl bibendum, faucibus 
+                            libero. Aliquam viverra, lacus vitae iaculis interdum, nunc arcu sodales urna, vitae auctor urna dui vitae augue... </p>
+                        <a href="News2.html">Read more...</a>
+                    </article>
+                    <article class="news" itemscope itemtype="https://schema.org/NewsArticle">
+                        <h2 itemprop="headline"><a href="News3.html">Culture</a></h2>
+                        <header>
+                            <h3 class="postdatenews" itemprop="dateCreated">8/10/2022</h3>
+                            <h4 class="posttimenews" itemprop="releasedEvent">7:07 PM</h4>
+                        </header>
+                        <p itemprop="articleSection">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut id nibh ullamcorper, rutrum metus sit amet, rhoncus urna. Curabitur elit mauris, molestie ut tortor quis, 
+                            pellentesque iaculis ante. Maecenas nec tincidunt ex, eget ultrices nulla. Cras fringilla enim ac euismod lobortis. In quis mi blandit, semper nisl bibendum, faucibus 
+                            libero. Aliquam viverra, lacus vitae iaculis interdum, nunc arcu sodales urna, vitae auctor urna dui vitae augue... </p>
+                        <a href="News3.html">Read more...</a>
+                    </article>
+                    <article class="news" itemscope itemtype="https://schema.org/NewsArticle">
+                        <h2 itemprop="headline"><a href="News4.html">Latest Crime</a></h2>
+                        <header>
+                            <h3 class="postdatenews" itemprop="dateCreated">23/10/2022</h3>
+                            <h4 class="posttimenews" itemprop="releasedEvent">7:32 PM</h4>
+                        </header>
+                        <p itemprop="articleSection">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut id nibh ullamcorper, rutrum metus sit amet, rhoncus urna. Curabitur elit mauris, molestie ut tortor quis, 
+                            pellentesque iaculis ante. Maecenas nec tincidunt ex, eget ultrices nulla. Cras fringilla enim ac euismod lobortis. In quis mi blandit, semper nisl bibendum, faucibus 
+                            libero. Aliquam viverra, lacus vitae iaculis interdum, nunc arcu sodales urna, vitae auctor urna dui vitae augue... </p>
+                        <a href="News4.html">Read more...</a>
+                    </article>             
+                </div>
+
+                <div id="main-news-section">
+                    <article class="events" itemscope itemtype="https://schema.org/NewsArticle">
+                        <h2 itemprop="headline"><a href="Events.html">Christmas Celebration in Prague</a></h2>
+                        <header>
+                            <h3 class="postdatenews" itemprop="dateCreated">9/10/2022</h3>
+                            <h4 class="posttimenews" itemprop="releasedEvent">7:04 PM</h4>
+                        </header>
+                        <figure>
+                            <img src="event2.jpg" alt="Picture of muzeum NE" style="width:100%">
+                            <figcaption>NE muzeum, Shlapak Vladislav, Prague 2022.</figcaption>
+                        </figure>
+                        <p style="text-align:justify" itemprop="articleSection"> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed neque ligula, tempor id leo at, finibus hendrerit libero. Suspendisse facilisis a 
+                        elit nec fringilla. Etiam ut orci sit amet nulla sollicitudin ullamcorper. Aenean imperdiet est lacus, quis mattis ante fermentum in...
+                        </p>
+                    </article>
+                    <article class="events" itemscope itemtype="https://schema.org/NewsArticle">
+                        <h2 itemprop="headline"><a href="Events.html">Christmas Tree and Market</a></h2>
+                        <header>
+                            <h3 class="postdatenews" itemprop="dateCreated">8/10/2022</h3>
+                            <h4 class="posttimenews" itemprop="releasedEvent">7:07 PM</h4>
+                        </header>
+                        <figure>
+                            <img src="event3.jpg" alt="Picture of Christmas tree" style="width:100%">
+                            <figcaption>Picture of Christmas tree on Václavské náměstí, Shlapak Vladislav, Prague 2022.</figcaption>
+                        </figure>
+                        <p style="text-align:justify" itemprop="articleSection"> 
+                        Quisque dapibus justo ut commodo consectetur. Fusce ac odio eros. Curabitur quis purus vel dui commodo accumsan ut porttitor orci. 
+                        Nullam quis lectus volutpat, finibus magna ut, mollis dui. Maecenas eu orci at augue aliquam blandit. Maecenas facilisis nisi neque...
+                        </p>
+                    </article>
+                </div>
+            </div>
+        </main>
+    </div>
+    
+    <!--aside content-->
+    <div class="aside" itemprop="isPartOf" itemscope itemtype="https://schema.org/WebSite">
+        <aside>
+            <h2>Sponsors</h2>
+            <p class="adv0"><img src="potion.png" alt="picture of battle potion" class="adv0__picture"><span class="adv0__text">Battle Potion Energy Drink</span></p>
+            <p class="adv2"><img src="sveijany.png" alt="picture of sveijany logo" class="adv2__picture"><span class="adv2__text">Unknown Liquid Drink</span></p>
+            <p class="adv3"><img src="czulogo.png" alt="picture of czu logo" class="adv3__picture"><span class="adv3__text">Czech University of Life Sciences</span></p>
+            <p class="adv4"><img src="selling.png" alt="picture of selling unit" class="adv4__picture"><span class="adv4__text">Mysterious object</span></p>
+        </aside>
+    </div>
+
+    <!--footer content-->
+    <div class="footer">
+        <footer id="page-footer" itemprop="hasPart" itemscope itemtype="https://schema.org/WPFooter">
+            <aside>This website is a students' project for the Web Design course at the Czech University of Life Sciences created by 
+                <a href="https://www.linkedin.com/in/vladislavshlapak/" itemprop="url"> Vladislav Shlapak</a>, 
+                <a href="https://www.linkedin.com/in/vera-vavan-82b301219" itemprop="url">Vera Vavan</a> and 
+                <a href="https://about.me/mokrun"  itemprop="url">Artem Makurin</a><br></aside>    
+            <a href="https://www.czu.cz/en/" id="logo">
+                <img alt="czulogo" src="czulogo.png"  style="height: 2em;width: 2em">
+            </a>
+            <p id="timestamp"><time itemprop="dateCreated" datetime="2022-10-05">October 5, 2022</time> Copyright</p>
+        </footer>
+    </div>
+</div>
+</body>
+</html>

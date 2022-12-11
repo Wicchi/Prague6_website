@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+    <!--meta + opengraphs-->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Shlapak Vladislav, Artem Makurin, Vavan Vera"> 
+    <meta name="description" content="The search result webpage for the Prague 6 District">
+    <meta name="keywords" content="Web Design, Project, Prague, District, Search, Detail">
+    <meta property="og:title" content="Prague 6 District Search result webpage">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="searchresult.html"> <!--change url-->
+    <meta property="og:image" content="praha6logo.png"> <!--maybe change to logo-->
+    <meta property="article:published_time" content="2022-12-11">
+    <meta property="article:updated_time" content="2022-12-11">
+    <title>Praha-6 District Search Result webpage</title>
+    <link rel="stylesheet" type="text/css" href="first.css">
+</head>
+
+<body itemscope itemtype="https://schema.org/WebPage">
+
+<div class="grid-container">
+    <!--top navigation + search-->
+    <header itemprop="hasPart" itemscope itemtype="http://schema.org/WPHeader" class="nav">
+
+        <nav itemprop="hasPart" itemscope itemtype="http://schema.org/SiteNavigationElement">
+                    <ul class="nav__links">
+                        <li ><a href="index.html">Homepage</a></li>
+                        <li><a href="news.html">News</a></li>
+                        <li><a href="contacts.html">Contact</a></li>
+                        <li><a href="loe.html">List of employees</a></li>
+                        <li><a href="Events.html">Events</a></li>
+                        <li><a href="TrafRes.html">Traffic restrictions</a></li>
+                        <li><a href="DaGp.html">Develop and ground plan</a></li>
+                    </ul>
+
+                <div class="nav__search">
+                    <div class="search-container">
+                        <form action="searchresult.html" aria-labelledby="search" role="search">
+                            <input type="text" placeholder="Enter search term here" name="search" id="search">
+                            <label for="search" >Search form</label>
+                            <button type="submit" class="search-button">Search<i class="fa fa-search"></i></button>
+                        </form>
+                    </div>
+                </div>
+            </nav>
+    </header>
+
+<div class="second_level_box">
+    <main class="second_level_box" id="main" itemscope itemprop="mainEntity" itemtype="https://schema.org/CreativeWork">
+    <div>
+      <h1>Search Results</h1>
+      <article class="news" itemscope itemtype="https://schema.org/NewsArticle">
+          <h2 itemprop="headline"><a href="News1.html">Town Hall News</a></h2>
+          <header>
+              <h3 class="postdatenews" itemprop="dateCreated">10/10/2022</h3>
+              <h4 class="posttimenews" itemprop="releasedEvent">7:02 PM</h4>
+          </header>
+          <p itemprop="articleSection">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut id nibh ullamcorper, rutrum metus sit amet, rhoncus urna. Curabitur elit mauris, molestie ut tortor quis, 
+              pellentesque iaculis ante. Maecenas nec tincidunt ex, eget ultrices nulla. Cras fringilla enim ac euismod lobortis. In quis mi blandit, semper nisl bibendum, faucibus 
+              libero. Aliquam viverra, lacus vitae iaculis interdum, nunc arcu sodales urna, vitae auctor urna dui vitae augue... </p>
+          <a href="News1.html">Read more...</a>
+      </article>
+      <article class="news" itemscope itemtype="https://schema.org/NewsArticle">
+          <h2 itemprop="headline"><a href="News2.html">Active Prague 6</a></h2>
+          <header>
+              <h3 class="postdatenews" itemprop="dateCreated">9/10/2022</h3>
+              <h4 class="posttimenews" itemprop="releasedEvent">7:04 PM</h4>
+          </header>
+          <p itemprop="articleSection">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut id nibh ullamcorper, rutrum metus sit amet, rhoncus urna. Curabitur elit mauris, molestie ut tortor quis, 
+              pellentesque iaculis ante. Maecenas nec tincidunt ex, eget ultrices nulla. Cras fringilla enim ac euismod lobortis. In quis mi blandit, semper nisl bibendum, faucibus 
+              libero. Aliquam viverra, lacus vitae iaculis interdum, nunc arcu sodales urna, vitae auctor urna dui vitae augue... </p>
+          <a href="News2.html">Read more...</a>
+      </article>
+      <article class="news" itemscope itemtype="https://schema.org/NewsArticle">
+          <h2 itemprop="headline"><a href="News3.html">Culture</a></h2>
+          <header>
+              <h3 class="postdatenews" itemprop="dateCreated">8/10/2022</h3>
+              <h4 class="posttimenews" itemprop="releasedEvent">7:07 PM</h4>
+          </header>
+          <p itemprop="articleSection">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut id nibh ullamcorper, rutrum metus sit amet, rhoncus urna. Curabitur elit mauris, molestie ut tortor quis, 
+              pellentesque iaculis ante. Maecenas nec tincidunt ex, eget ultrices nulla. Cras fringilla enim ac euismod lobortis. In quis mi blandit, semper nisl bibendum, faucibus 
+              libero. Aliquam viverra, lacus vitae iaculis interdum, nunc arcu sodales urna, vitae auctor urna dui vitae augue... </p>
+          <a href="News3.html">Read more...</a>
+      </article>
+      <article class="news" itemscope itemtype="https://schema.org/NewsArticle">
+          <h2 itemprop="headline"><a href="News4.html">Latest Crime</a></h2>
+          <header>
+              <h3 class="postdatenews" itemprop="dateCreated">23/10/2022</h3>
+              <h4 class="posttimenews" itemprop="releasedEvent">7:32 PM</h4>
+          </header>
+          <p itemprop="articleSection">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut id nibh ullamcorper, rutrum metus sit amet, rhoncus urna. Curabitur elit mauris, molestie ut tortor quis, 
+              pellentesque iaculis ante. Maecenas nec tincidunt ex, eget ultrices nulla. Cras fringilla enim ac euismod lobortis. In quis mi blandit, semper nisl bibendum, faucibus 
+              libero. Aliquam viverra, lacus vitae iaculis interdum, nunc arcu sodales urna, vitae auctor urna dui vitae augue... </p>
+          <a href="News4.html">Read more...</a>
+      </article>             
+  </div>s
+  </main>
+
+  <div class="aside" itemprop="isPartOf" itemscope itemtype="http://schema.org/WebSite">
+    <aside>
+      <h2>Do you want to enlarge your *****? All you need is <a href="https://www.czu.cz/en">...</a></h2>
+    </aside>
+  </div>
+</div>
+    <!--footer content-->
+    <div class="footer">
+      <footer id="page-footer" itemprop="hasPart" itemscope itemtype="https://schema.org/WPFooter">
+          <aside>This website is a students' project for the Web Design course at the Czech University of Life Sciences created by 
+              <a href="https://www.linkedin.com/in/vladislavshlapak/" itemprop="url"> Vladislav Shlapak</a>, 
+              <a href="https://www.linkedin.com/in/vera-vavan-82b301219" itemprop="url">Vera Vavan</a> and 
+              <a href="https://about.me/mokrun"  itemprop="url">Artem Makurin</a><br></aside>    
+          <a href="https://www.czu.cz/en/" id="logo">
+              <img alt="czulogo" src="czulogo.png" style="height: 2em;width: 2em">
+          </a>
+          <p id="timestamp"><time itemprop="dateCreated" datetime="2022-10-05">October 5, 2022</time> Copyright</p>
+      </footer>
+  </div>
+</div>
+</body>
+</html>
