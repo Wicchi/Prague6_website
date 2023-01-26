@@ -10,6 +10,6 @@ Features of this project:
 * Accessibility on a WCAG 1.0 level
 * Microdata
 
-Collabirative work <a href="https://about.me/mokrun">Artem Makurin</a> and <a href="https://www.linkedin.com/in/vladislavshlapak/">Shlapak Vladislav</a>
+Collabirative work <a href="https://about.me/mokrun">Artem Makurin</a>, <a href="https://www.linkedin.com/in/vladislavshlapak/">Shlapak Vladislav</a> and <a href="https://www.linkedin.com/in/vera-vavan-82b301219">Vera Vavan</a>
 
 _Student Project_
