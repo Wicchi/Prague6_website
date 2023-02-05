@@ -1,8 +1,8 @@
 # Website Prague - 6
 
-This project represent the website for the Prague 6 District. 
+This project represents the website for the Prague 6 District. 
 
-This is static website on pure CSS and HTML.
+This is static website on pure CSS and HTML with no frameworks used.
 Features of this project:
 * Used mobile-first approach.
 * Used HTML5
@@ -10,6 +10,6 @@ Features of this project:
 * Accessibility on a WCAG 1.0 level
 * Microdata
 
-Collabirative work <a href="https://about.me/mokrun">Artem Makurin</a>, <a href="https://www.linkedin.com/in/vladislavshlapak/">Shlapak Vladislav</a> and <a href="https://www.linkedin.com/in/vera-vavan-82b301219">Vera Vavan</a>
+Collaborative work by <a href="https://www.linkedin.com/in/makurinartem/">Makurin Artem</a>, <a href="https://www.linkedin.com/in/vladislavshlapak/">Shlapak Vladislav</a> and <a href="https://www.linkedin.com/in/vera-vavan-82b301219">Vera Vavan</a>
 
 _Student Project_
